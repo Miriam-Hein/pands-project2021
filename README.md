@@ -6,7 +6,7 @@ Summary of the Fisher's Iris data set
 The iris is a plant genus which is extensive in species, with yellow, blue or multi-coloured petals, was named after the rainbow (Greek iris), like the Greek goddess of the rainbow.
 
 
-![](PGN/iris_flower.png) 
+![](PNG/iris_flower.png) 
 
 Entries & Updates: 
 11MAR21: Creation of git hub repository 
