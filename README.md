@@ -1,14 +1,15 @@
 # pands-project2021
 Final project for the course Programming and Scripting
 
-11MAR21: Creation of git hub repository 
-
 Summary of the Fisher's Iris data set
 
 The iris is a plant genus which is extensive in species, with yellow, blue or multi-coloured petals, was named after the rainbow (Greek iris), like the Greek goddess of the rainbow.
-The  
 
+The 
+![](PGN files/iris_flower.png) 
 
+Entries & Updates: 
+11MAR21: Creation of git hub repository 
 23MAR21: Uploaded dataset. Download dataset from https://archive.ics.uci.edu/ml/datasets/Iris.
 changed iris.data to iris.csv. Added Column titles to 
    1. sepal length (in cm)
