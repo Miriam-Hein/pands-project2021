@@ -16,12 +16,22 @@ data = pd.read_csv('data/iris.csv') # pd.read_csv is used because imported panda
 #data = sbn.load_dataset('data/iris.csv') # https://www.geeksforgeeks.org/python-basics-of-pandas-using-iris-dataset/ 
 # To read the CSV file (https://www.guru99.com/python-csv.html)
 
-print (data.head(10))
-data.describe()
+# print (data.head(10))
+# data.describe()
+# print (data.describe())
+
+with open ('summaryOfVariables.txt', 'w') as file:
+     file.write(str(data.describe()))
+
+#plt.figure(figsize = (10, 7))
+#x = data["SepalLengthCm"]
+  
+#plt.hist(x, bins = 20, color = "green")
+#plt.title("Sepal Length in cm")
+#plt.xlabel("Sepal_Length_cm")
+#plt.ylabel("Count")
 
 
-#with open ('data.txt', 'w') as file:
-#     file.write(str(data))
 
 #data["sepalLength"].describe() # https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html
 #data["sepalWidth"].describe()
