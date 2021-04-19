@@ -1,6 +1,8 @@
 # Final project for the course Programming and Scripting 2021
 
-## Summary of the Fisher's Iris data set
+## Background
+
+### Summary of the Fisher's Iris data set
 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
@@ -23,7 +25,13 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 **Figure 2: Morphological Measures of Iris Flowers [1]**
 
+### Python Analytics tool 
+
 ## Analysis of the Fisher's Iris Data set
+
+### Summary of Variables 
+
+1. Length of the sepal leaf in cm ("sepalLenght")
 
 ## Interpretation of results
 
