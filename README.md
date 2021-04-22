@@ -31,7 +31,25 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 ### Summary of Variables 
 
-1. Length of the sepal leaf in cm ("sepalLenght")
+1. Length of the sepal leaf in cm ("SepalLengthCm")
+
+![](PNG/Histogram_Iris-SepalLength.png) 
+
+2. Width of sepal leaf in cm ("SepalWidthCm")
+
+![](PNG/Histogram_Iris-SepalWidth.png) 
+
+3. Length of petal leaf in cm ("PetalWidthCm") 
+
+![](PNG/Histogram_Iris-PetalWidth.png) 
+
+4. Width of petal leaf in cm ("PetalLengthCm")
+
+![](PNG/Histogram_Iris-PetalWidth.png) 
+
+5. Summary of all variables for Sepal Lenght/Width & Petal Length/Width, 
+
+![](PNG/Histogram_AllVariables.png) 
 
 ## Interpretation of results
 
