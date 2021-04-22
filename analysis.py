@@ -52,14 +52,26 @@ sns.displot(iris, x="PetalWidthCm", hue="Species", element="step") # https://sea
 plt.savefig('PNG/Histogram_Iris-PetalWidth.png')   
 plt.show ()
 
+# removing Id column
+new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]]
+# Histogram of all species for each variable using matplotlib.pyplot
+f,a = plt.subplots(2,2)
+a = a.ravel()
+for idx,ax in enumerate(a):
+    ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85)
+    ax.set_title(new_iris.columns[idx])
+plt.tight_layout()
+#Save this plot as file
+plt.savefig('PNG/Histogram_AllVariables.png')   
+plt.show ()
+
 # Generate histogram/distribution plot
 #def SepalLength():
 #plt.figure(figsize=[10,10]) # https://www.datacamp.com/community/tutorials/histograms-matplotlib
-#sns.displot(SepalLengthCm)
+
 
 
 #def SepalWidth():
-#plt.figure(figsize=[10,10]) # https://www.datacamp.com/community/tutorials/histograms-matplotlib
 #sns.displot(SepalWidthCm)
 #Save this plot as file
 #plt.savefig('PNG/Histogram_SepalWidthCm.png')   
@@ -69,15 +81,9 @@ plt.show ()
 #sepalLength()
 #sepalWidth()
 
-# f,a = plt.subplots(1,1)
-# a = a.ravel()
-# for idx,ax in enumerate(a):
-#    ax.hist(new_data.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85)
-#    ax.set_title(new_data.columns[idx])
-# plt.tight_layout()
 
-# removing Id column
-# new_data = data[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]]
+
+
 
 # Extract feature we're interested in
 #SepalLengthCm = iris['SepalLengthCm']
