@@ -61,6 +61,8 @@ a = a.ravel()
 for idx,ax in enumerate(a):
     ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85)
     ax.set_title(new_iris.columns[idx])
+    ax.set_ylabel('Count') # https://stackoverflow.com/questions/53311685/difference-between-ax-set-xlabel-and-ax-xaxis-set-label-in-matplotlib-3-0-1
+    ax.set_xlabel(new_iris.columns[idx])
 plt.tight_layout()
 #Save this plot as file
 plt.savefig('PNG/Histogram_AllVariables.png')   

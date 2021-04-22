@@ -64,18 +64,18 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 The following libraries were used in this project:    
 
 ```python
-   import pandas as pd #A nickname is assigned to all following libraries (pd, np, plt, sbn) for better usability
+   import pandas as pd 
    import numpy as np
    import matplotlib.pyplot as plt 
    import seaborn as sns 
 ```
 
-***pandas***stands for "Python Data Analysis" and was created as an open source by Wes McKinney.
+***pandas*** stands for "Python Data Analysis" and was created as an open source by Wes McKinney.
 This project uses the library to take data directly from the csv file uploaded. This library creates a Python object with rows and columnes called dataframe (oftne refer to in code as df) which allows to work with a "table like" structure rather having to work with lists and/or directories using for loops/list comprehension. A "nickname"/ short for pandas has been created for better usability to access Pandas with "pd.command" instead of having to use "pandas.command". Numpy is usually used in combination with pandas. 
-[4](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
+[4]
 
-***numPy***stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. 
-[5](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
+***numPy*** stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. 
+[5]
 
 ***matplotlib***
 
@@ -127,8 +127,8 @@ This project uses the library to take data directly from the csv file uploaded. 
 [3] https://en.wikipedia.org/wiki/Iris_flower_data_set
 
 ### References Analysis of the Fisher's Iris Dataset
-
-
+[4](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
+[5](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
 
 ### PNG references: 
 [1] Iris flower: https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
