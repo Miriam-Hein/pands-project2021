@@ -1,8 +1,39 @@
 # Final project for the course Programming and Scripting 2021
 
+This repository include the Final Project 2021 for the Module Programming and Scripting. 
+
+This project contains the research of the ***Fisher's Iris data set*** which will be investigated in Python and a summary will be provided in this readme file. 
+It will include background information about the data set used and will explain what investigating a data set entails and how Python can be used to do this. 
+
+## Table of contents
+* [Background](#Background)
+    * [Summary of the Fisher's Iris data set](#Summary of the Fisher's Iris data set)
+    * [Iris dataset file](#iris-dataset-file)
+* [Dataset code and analysis](#dataset-code-and-analysis)
+    * [Imported libraries and modules](#imported-libraries-and-modules)
+        * [Libraries cheat sheets](#libraries-cheat-sheets)
+    * [Dataset import](#dataset-import)
+    * [Dataset summary](#datasetsummary)
+        * [Summary of the values - describe()](#summary-of-the-values---describe())
+        * [Samples of each type - info()](#samples-of-each-type---info())
+* [Plots](#plots)
+    * [Histograms](#histograms)
+        * [Histogram code](#histogram-code)
+    * [Scatterplots](#scatterplots)
+        * [Scatterplot code](#scatterplot-code)
+    * [Pairplot](#pairplot)
+* [References](#references)
+    * [Worthy mentions](#worthy-mentions)
+    * [GitHub editing](#github-editing)
+    * [Dataset analysis approach by others](#dataset-analysis-approach-by-others)
+
+
+
+
+
 ## Background
 
-### Summary of the Fisher's Iris data set
+### Fisher's Iris data set
 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
@@ -27,9 +58,40 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 ### Python Analytics tool 
 
+
+#### Libraries 
+
+The following libraries were used in this project:    
+
+```python
+   import pandas as pd #A nickname is assigned to all following libraries (pd, np, plt, sbn) for better usability
+   import numpy as np
+   import matplotlib.pyplot as plt 
+   import seaborn as sns 
+```
+
+***pandas***stands for "Python Data Analysis" and was created as an open source by Wes McKinney.
+This project uses the library to take data directly from the csv file uploaded. This library creates a Python object with rows and columnes called dataframe (oftne refer to in code as df) which allows to work with a "table like" structure rather having to work with lists and/or directories using for loops/list comprehension. A "nickname"/ short for pandas has been created for better usability to access Pandas with "pd.command" instead of having to use "pandas.command". Numpy is usually used in combination with pandas. 
+[4](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
+
+***numPy***stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. 
+[5](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
+
+***matplotlib***
+
+***seaborn***
+
+#### How to run the Python code and its purpose
+
+
+
 ## Analysis of the Fisher's Iris Data set
 
-### Summary of Variables 
+### Summary of Variables
+
+
+
+### Histograms of Variables 
 
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
@@ -51,32 +113,37 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 ![](PNG/Histogram_AllVariables.png) 
 
+### Scatterplots of pair of Variables 
+
 ## Interpretation of results
 
 ## Conclusion
 
-## References Summary of Fisher's Iris data set: 
+## References
+
+### References Summary of Fisher's Iris data set: 
 [1] https://en.wikipedia.org/wiki/Iris_(plant) 
 [2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
 [3] https://en.wikipedia.org/wiki/Iris_flower_data_set
 
-## References Analysis of the Fisher's Iris Dataset
+### References Analysis of the Fisher's Iris Dataset
 
 
 
-## PNG references: 
+### PNG references: 
 [1] Iris flower: https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
 [2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
 
 
-## References & Source: 
+### References & Source: 
 Dataset: https://archive.ics.uci.edu/ml/datasets/Iris
 
 
 
 ## Tutorials used: 
-PNG added to readme: https://www.youtube.com/watch?v=hHbWF1Bvgf4
-Basic writing and formatting syntax in GitHub: https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+[PNG added to readme] (https://www.youtube.com/watch?v=hHbWF1Bvgf4)
+[Basic writing and formatting syntax in GitHub] https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+[Fenced code block added to readme] (https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
 
 
 
@@ -95,4 +162,7 @@ Basic writing and formatting syntax in GitHub: https://docs.github.com/en/github
     - Started summary of the Fisher's Iris Dataset
 19APR21: 
   - updated dataset from https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ due to issues of unnamed columns. 
+22APR21: 
+  - created histograms of all variable using code in analysis.py and updated readme file
+
   

@@ -2,6 +2,7 @@
 # This program analysis the Fisher's Iris data set using python
 # Author: Miriam Heinlein
 
+# Pandas 
 # Numpy is a library for numerical computing. 
 # matplotlib.pyplot is a library for data visualization
 
@@ -14,7 +15,7 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 
 # Load dataset (Fisher's Iris Data Set) using pandas
 iris = pd.read_csv('data/iris.csv') # pd.read_csv is used because imported pandas as pd (https://datacarpentry.org/python-ecology-lesson/02-starting-with-data/, https://mer.vin/2019/08/seaborn-to-visualize-iris-data/) # CSV stands for Comma-Separated Values
-# To read the CSV file (https://www.guru99.com/python-csv.html)
+
  
 with open ('summaryOfVariables.txt', 'w') as file:
      file.write(str(iris.describe())) # https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html
@@ -65,27 +66,10 @@ plt.tight_layout()
 plt.savefig('PNG/Histogram_AllVariables.png')   
 plt.show ()
 
-# Generate histogram/distribution plot
-#def SepalLength():
+
 #plt.figure(figsize=[10,10]) # https://www.datacamp.com/community/tutorials/histograms-matplotlib
 
 
 
-#def SepalWidth():
-#sns.displot(SepalWidthCm)
-#Save this plot as file
-#plt.savefig('PNG/Histogram_SepalWidthCm.png')   
-#plt.show ()
-
-#def histograms():
-#sepalLength()
-#sepalWidth()
 
 
-
-
-
-# Extract feature we're interested in
-#SepalLengthCm = iris['SepalLengthCm']
-#SepalWidthCm = iris['SepalWidthCm']
-# iris_set = iris.loc[iris["Species"] == "Iris-setosa"]
