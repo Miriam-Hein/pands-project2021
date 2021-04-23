@@ -123,6 +123,8 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 #### Scatterplots of pair of Variables 
 
+A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting 
+
 #### Pairplot
 
 ## Results presentation

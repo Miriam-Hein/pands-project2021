@@ -10,6 +10,7 @@ import pandas as pd #A nickname is assigned to all following libraries (pd, np, 
 import numpy as np
 import matplotlib.pyplot as plt 
 import seaborn as sns
+import spellchecker
 #Set style for seaborn graphs #http://seaborn.pydata.org/generated/seaborn.set_theme.html#seaborn.set_theme
 sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-serif', font_scale=1, color_codes=True, rc=None)
 
@@ -23,10 +24,13 @@ with open ('summaryOfVariables.txt', 'w') as file: # Write-only mode: 'w' opens 
 with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file for appending. Starts writing at the end of the file. Creates new file if file is not existing. 
      file.write(str('\n')) # Creates new lines in the text file for better readability 
      file.write(str('\n'))
+     file.write (print('Number of samples available for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
      file.write(str(iris["Species"].value_counts())) # https://www.kaggle.com/biphili/seaborn-matplotlib-iris-data-visualization-code-1
-     file.write(str('\n'))
-     file.write(str('\n'))
-     file.write(str(iris.loc[iris["Species"] == "Iris-setosa"])) #usful for histogram
+     #file.write(str('\n'))
+     #file.write(str('\n'))
+     #file.write(str(iris.loc[iris["Species"] == "Iris-setosa"])) #usful for histogram
+     
+
 
 
 #Plotting histogram of each variable to png files
@@ -73,7 +77,7 @@ plt.show ()
 
 #plt.figure(figsize=[10,10]) # https://www.datacamp.com/community/tutorials/histograms-matplotlib
 
-
+#Plotting scatterplot of each pair of variables to png files
 
 
 
