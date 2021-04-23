@@ -24,7 +24,7 @@ with open ('summaryOfVariables.txt', 'w') as file: # Write-only mode: 'w' opens 
 with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file for appending. Starts writing at the end of the file. Creates new file if file is not existing. 
      file.write(str('\n')) # Creates new lines in the text file for better readability 
      file.write(str('\n'))
-     file.write (print('Number of samples available for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+     file.write (str('Number of samples available for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
      file.write(str(iris["Species"].value_counts())) # https://www.kaggle.com/biphili/seaborn-matplotlib-iris-data-visualization-code-1
      #file.write(str('\n'))
      #file.write(str('\n'))
