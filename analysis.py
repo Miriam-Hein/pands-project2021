@@ -75,10 +75,17 @@ plt.show ()
 
 #Plotting scatterplot of each pair of variables to png files
 #Scatterplot of Sepal Width and Sepal Length features of the Fisher's Iris data
-sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="Species")
+sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="Species") # https://seaborn.pydata.org/tutorial/relational.html
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Sepal.png')   
 plt.show ()
 
+#Scatterplot of Petal Length and Petal Width features of the Fisher's Iris data
+sns.relplot(x="PetalLengthCm", y="PetalWidthCm", hue="Species", legend = "auto", data=iris)
+
+
+#Save this plot as file
+plt.savefig('PNG/Scatterplot_Iris-Petal.png')   
+plt.show ()
 
