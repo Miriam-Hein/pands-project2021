@@ -110,6 +110,17 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ![](PNG/Histogram_AllVariables.png) 
 
+```python
+    f,a = plt.subplots(2,2)
+    a = a.ravel()
+    for idx,ax in enumerate(a):
+        ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85) 
+        ax.set_title(new_iris.columns[idx])
+        ax.set_ylabel('Count')
+        ax.set_xlabel(new_iris.columns[idx])
+    plt.tight_layout()
+``` 
+
 #### Scatterplots of pair of Variables 
 
 #### Pairplot

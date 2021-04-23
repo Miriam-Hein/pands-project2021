@@ -6,7 +6,7 @@
 # Numpy is a library for numerical computing. 
 # matplotlib.pyplot is a library for data visualization
 
-import pandas as pd #A nickname is assigned to all following libraries (pd, np, plt, sbn) for better usability
+import pandas as pd #A nickname is assigned to all following libraries (pd, np, plt, sbn) for better usability throughout the code
 import numpy as np
 import matplotlib.pyplot as plt 
 import seaborn as sns
@@ -14,21 +14,22 @@ import seaborn as sns
 sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-serif', font_scale=1, color_codes=True, rc=None)
 
 # Load dataset (Fisher's Iris Data Set) using pandas
-iris = pd.read_csv('data/iris.csv') # pd.read_csv is used because imported pandas as pd (https://datacarpentry.org/python-ecology-lesson/02-starting-with-data/, https://mer.vin/2019/08/seaborn-to-visualize-iris-data/) # CSV stands for Comma-Separated Values
+iris = pd.read_csv('data/iris.csv') # pd.read_csv is used because pandas library was imported, see pd.command (pd short for pandas as defined above). (https://datacarpentry.org/python-ecology-lesson/02-starting-with-data/, https://mer.vin/2019/08/seaborn-to-visualize-iris-data/) # CSV stands for Comma-Separated Values
 
- 
-with open ('summaryOfVariables.txt', 'w') as file:
+# Creating a text file with Access mode write-only
+with open ('summaryOfVariables.txt', 'w') as file: # Write-only mode: 'w' opens file for writing and creates a file or overwrites any existing files. File pointer is placed at the beginning of the file. 
      file.write(str(iris.describe())) # https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html
-with open ('summaryOfVariables.txt', 'a') as file:
-     file.write(str('\n'))
+# Appending the text file created with Access mode append
+with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file for appending. Starts writing at the end of the file. Creates new file if file is not existing. 
+     file.write(str('\n')) # Creates new lines in the text file for better readability 
      file.write(str('\n'))
      file.write(str(iris["Species"].value_counts())) # https://www.kaggle.com/biphili/seaborn-matplotlib-iris-data-visualization-code-1
      file.write(str('\n'))
      file.write(str('\n'))
      file.write(str(iris.loc[iris["Species"] == "Iris-setosa"])) #usful for histogram
 
-#Plotting histogram of each variable to png files
 
+#Plotting histogram of each variable to png files
 # Histogram for SepalLengthCm
 sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
@@ -54,16 +55,17 @@ plt.savefig('PNG/Histogram_Iris-PetalWidth.png')
 plt.show ()
 
 # removing Id column
-new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]]
+new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] # Creating a new iris dataset with only the columes required for the plot
 # Histogram of all species for each variable using matplotlib.pyplot
-f,a = plt.subplots(2,2)
-a = a.ravel()
+f,a = plt.subplots(2,2) # defines subplot display structure
+a = a.ravel() # a = array
 for idx,ax in enumerate(a):
-    ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85)
+    ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85) 
     ax.set_title(new_iris.columns[idx])
     ax.set_ylabel('Count') # https://stackoverflow.com/questions/53311685/difference-between-ax-set-xlabel-and-ax-xaxis-set-label-in-matplotlib-3-0-1
     ax.set_xlabel(new_iris.columns[idx])
-plt.tight_layout()
+plt.tight_layout() # it automatically adjusts the subplots parameters so that all subplots fit into the figure area. http://omz-software.com/pythonista/matplotlib/users/tight_layout_guide.html#:~:text=tight_layout%20automatically%20adjusts%20subplot%20params,%2C%20axis%20labels%2C%20and%20titles.
+
 #Save this plot as file
 plt.savefig('PNG/Histogram_AllVariables.png')   
 plt.show ()
