@@ -131,6 +131,13 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 
 ### Investigation of the Fisher's Iris Data set
 
+#### Analysis of the Scatterplots
+
+1.  
+
+![](PNG/Scatterplot_Iris-Sepal.png)  ![](PNG/Scatterplot_Iris-Petal.png)
+**Figure 8: Scatterplot of the iris data set for sepal length vs sepal width (left) and for petal length vs petal width (right)**
+
 ### Pythons role
 
 ## Conclusion
