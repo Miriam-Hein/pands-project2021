@@ -7,28 +7,25 @@ It will include background information about the data set used and will explain 
 
 ## Table of contents
 * [Background](#Background)
-    * [Summary of the Fisher's Iris data set](#Summary of the Fisher's Iris data set)
-    * [Iris dataset file](#iris-dataset-file)
-* [Dataset code and analysis](#dataset-code-and-analysis)
-    * [Imported libraries and modules](#imported-libraries-and-modules)
-        * [Libraries cheat sheets](#libraries-cheat-sheets)
+    * [Summary of the Fisher's Iris data set](#Fisher's-Iris-data-set)
+    * [Python Analytics tool](#Python-Analytics-tool)
+        * [Libraries] (#Libraries)
+        * [Requirements](#Requirements to run Python code)
+* [Implementation & Code explanation](#Analysis-of-the-Fisher's-Iris-Data-set)
     * [Dataset import](#dataset-import)
-    * [Dataset summary](#datasetsummary)
-        * [Summary of the values - describe()](#summary-of-the-values---describe())
-        * [Samples of each type - info()](#samples-of-each-type---info())
-* [Plots](#plots)
-    * [Histograms](#histograms)
-        * [Histogram code](#histogram-code)
-    * [Scatterplots](#scatterplots)
-        * [Scatterplot code](#scatterplot-code)
-    * [Pairplot](#pairplot)
-* [References](#references)
-    * [Worthy mentions](#worthy-mentions)
-    * [GitHub editing](#github-editing)
-    * [Dataset analysis approach by others](#dataset-analysis-approach-by-others)
-
-
-
+    * [Summary of variables](#Summary-of-variables)
+    * [Plots](#Plots)
+        * [Histograms](#Histograms-of-Variables )
+        * [Scatterplots](#Scatterplots-of-pair-of-Variables)
+        * [Pairplot](#Pairplot)
+* [Analysis of the Data set](#Analysis-of-the-Fisher's-Iris-Data-set)
+* [Project conclusion](#Conclusion) 
+* [References](#References)
+    * [Iris Fisher's Data Set](#References-Summary-of-Fisher's-Iris-data-set)
+    * [GitHub formatting](#GitHub-formatting)
+    * [PNG references](#PNG-references)
+    * [Other Repositiories](#)
+* [Entries & updates](#Entries-&-Updates)
 
 
 ## Background
@@ -81,17 +78,19 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ***seaborn***
 
-#### How to run the Python code and its purpose
+#### Requirements to run Python code
 
 
 
-## Analysis of the Fisher's Iris Data set
+## Implementation & Code explanation
+
+### Dataset import
 
 ### Summary of Variables
 
+### Plots
 
-
-### Histograms of Variables 
+#### Histograms of Variables 
 
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
@@ -113,9 +112,15 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ![](PNG/Histogram_AllVariables.png) 
 
-### Scatterplots of pair of Variables 
+#### Scatterplots of pair of Variables 
 
-## Interpretation of results
+#### Pairplot
+
+## Results presentation
+
+### Investigation of the Fisher's Iris Data set
+
+### Python's role
 
 ## Conclusion
 
@@ -130,7 +135,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 [4](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
 [5](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
 
-### PNG references: 
+### PNG references 
 [1] Iris flower: https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
 [2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
 
@@ -140,18 +145,19 @@ Dataset: https://archive.ics.uci.edu/ml/datasets/Iris
 
 
 
-## Tutorials used: 
+## GitHub formatting 
 [PNG added to readme] (https://www.youtube.com/watch?v=hHbWF1Bvgf4)
 [Basic writing and formatting syntax in GitHub] https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 [Fenced code block added to readme] (https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
 
+## Other repositiories
+[GitHub repository] (https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
 
-
-## Entries & Updates: 
+## Entries & Updates 
 
 11MAR21: Creation of git hub repository 
 23MAR21: 
-    - Uploaded dataset. Download dataset from https://archive.ics.uci.edu/ml/datasets/Iris.
+  - Uploaded dataset. Download dataset from https://archive.ics.uci.edu/ml/datasets/Iris.
       changed iris.data to iris.csv. Added Column titles to 
         1. sepal length (in cm)
         2. sepal width (in cm)
@@ -159,10 +165,15 @@ Dataset: https://archive.ics.uci.edu/ml/datasets/Iris
         4. petal width (in cm)
         5. class
       as per iris.names file section 7 Attributes. 
-    - Started summary of the Fisher's Iris Dataset
+  - Started summary of the Fisher's Iris Dataset
+27MAR21 - 11APR21: 
+  - Easter break
 19APR21: 
   - updated dataset from https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ due to issues of unnamed columns. 
 22APR21: 
   - created histograms of all variable using code in analysis.py and updated readme file
-
-  
+  - added Table of Content to the readme file (sorce https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
+23APR21:
+  - updated Readme file 
+       - Table of Content as per structure of the readme file
+  - 
