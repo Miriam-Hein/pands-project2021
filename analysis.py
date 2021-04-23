@@ -25,13 +25,9 @@ with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file
      file.write(str('\n')) # Creates new lines in the text file for better readability 
      file.write(str('\n'))
      file.write (str('Number of samples available for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+     file.write(str('\n'))
      file.write(str(iris["Species"].value_counts())) # https://www.kaggle.com/biphili/seaborn-matplotlib-iris-data-visualization-code-1
-     #file.write(str('\n'))
-     #file.write(str('\n'))
-     #file.write(str(iris.loc[iris["Species"] == "Iris-setosa"])) #usful for histogram
-     
-
-
+   
 
 #Plotting histogram of each variable to png files
 # Histogram for SepalLengthCm
@@ -78,6 +74,11 @@ plt.show ()
 #plt.figure(figsize=[10,10]) # https://www.datacamp.com/community/tutorials/histograms-matplotlib
 
 #Plotting scatterplot of each pair of variables to png files
+#Scatterplot of Sepal Width and Sepal Length features of the Fisher's Iris data
+sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="Species")
 
+#Save this plot as file
+plt.savefig('PNG/Scatterplot_Iris-Sepal.png')   
+plt.show ()
 
 
