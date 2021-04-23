@@ -11,7 +11,7 @@ It will include background information about the data set used and will explain 
     * [Python Analytics tool](#Python-Analytics-tool)
         * [Libraries](#Libraries)
         * [Requirements](#Requirements-to-run-Python-code)
-* [Implementation and Code explanation](#Implementation-and-Code explanation)
+* [Implementation and Code explanation](#Implementation-and-Code-explanation)
     * [Dataset import](#dataset-import)
     * [Summary of variables](#Summary-of-variables)
     * [Plots](#Plots)
