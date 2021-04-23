@@ -11,21 +11,19 @@ It will include background information about the data set used and will explain 
     * [Python Analytics tool](#Python-Analytics-tool)
         * [Libraries](#Libraries)
         * [Requirements](#Requirements-to-run-Python-code)
-* [Implementation & Code explanation](#Analysis-of-the-Fisher's-Iris-Data-set)
+* [Implementation and Code explanation](#Implementation-and-Code explanation)
     * [Dataset import](#dataset-import)
     * [Summary of variables](#Summary-of-variables)
     * [Plots](#Plots)
         * [Histograms](#Histograms-of-Variables )
         * [Scatterplots](#Scatterplots-of-pair-of-Variables)
         * [Pairplot](#Pairplot)
-* [Analysis of the Data set](#Analysis-of-the-Fisher's-Iris-Data-set)
+* [Results presentation](#Results-presentation)
+    * [Analysis of the Fishers Iris Data set](#Investigation-of-the-Fishers-Iris-Data-set)
+    * [Pythons role](#Pythons-role)
 * [Project conclusion](#Conclusion) 
 * [References](#References)
-    * [Iris Fishers Data Set](#References-Summary-of-Fisher's-Iris-data-set)
-    * [GitHub formatting](#GitHub-formatting)
-    * [PNG references](#PNG-references)
-    * [Other Repositiories](#Other-repositiories)
-* [Entries and updates](#Entries-&-Updates)
+* [Entries and updates](#Entries-and-Updates)
 
 
 ## Background
@@ -82,7 +80,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 
 
-## Implementation & Code explanation
+## Implementation and Code explanation
 
 ### Dataset import
 
@@ -120,7 +118,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ### Investigation of the Fisher's Iris Data set
 
-### Python's role
+### Pythons role
 
 ## Conclusion
 
@@ -140,20 +138,18 @@ This project uses the library to take data directly from the csv file uploaded. 
 [2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
 
 
-### References & Source: 
+### References and Source: 
 Dataset: https://archive.ics.uci.edu/ml/datasets/Iris
 
-
-
-## GitHub formatting 
+### GitHub formatting 
 [PNG added to readme] (https://www.youtube.com/watch?v=hHbWF1Bvgf4)
 [Basic writing and formatting syntax in GitHub] https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 [Fenced code block added to readme] (https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
 
-## Other repositiories
+### Other repositiories
 [GitHub repository] (https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
 
-## Entries & Updates 
+## Entries and Updates 
 
 11MAR21: Creation of git hub repository 
 23MAR21: 
