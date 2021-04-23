@@ -135,7 +135,7 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 
 1.  
 
-<img src = "PNG/Scatterplot_Iris-Sepal.png" alt = "Scatterplot_Iris-SepalSepal" width = "450" height = "450"><img src = "PNG/Scatterplot_Iris-Petal.png" alt = "Scatterplot_Iris-Petal" width = "450" height = "450">
+<img src = "PNG/Scatterplot_Iris-Sepal.png" alt = "Scatterplot_Iris-SepalSepal"><img src = "PNG/Scatterplot_Iris-Petal.png" alt = "Scatterplot_Iris-Petal">
 
 **Figure 8: Scatterplot of the iris data set for sepal length vs sepal width (left) and for petal length vs petal width (right)**
 
