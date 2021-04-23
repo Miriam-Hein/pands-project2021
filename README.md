@@ -7,10 +7,10 @@ It will include background information about the data set used and will explain 
 
 ## Table of contents
 * [Background](#Background)
-    * [Summary of the Fisher's Iris data set](#Fisher's-Iris-data-set)
+    * [Fishers Iris data set](#Summary-of-the-Fisher's-Iris-data-set)
     * [Python Analytics tool](#Python-Analytics-tool)
-        * [Libraries] (#Libraries)
-        * [Requirements](#Requirements to run Python code)
+        * [Libraries](#Libraries)
+        * [Requirements](#Requirements-to-run-Python-code)
 * [Implementation & Code explanation](#Analysis-of-the-Fisher's-Iris-Data-set)
     * [Dataset import](#dataset-import)
     * [Summary of variables](#Summary-of-variables)
@@ -21,16 +21,16 @@ It will include background information about the data set used and will explain 
 * [Analysis of the Data set](#Analysis-of-the-Fisher's-Iris-Data-set)
 * [Project conclusion](#Conclusion) 
 * [References](#References)
-    * [Iris Fisher's Data Set](#References-Summary-of-Fisher's-Iris-data-set)
+    * [Iris Fishers Data Set](#References-Summary-of-Fisher's-Iris-data-set)
     * [GitHub formatting](#GitHub-formatting)
     * [PNG references](#PNG-references)
-    * [Other Repositiories](#)
-* [Entries & updates](#Entries-&-Updates)
+    * [Other Repositiories](#Other-repositiories)
+* [Entries and updates](#Entries-&-Updates)
 
 
 ## Background
 
-### Fisher's Iris data set
+### Summary of the Fisher's Iris data set
 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
