@@ -14,12 +14,12 @@ It will include background information about the data set used and will explain 
 * [Implementation and Code explanation](#Implementation-and-Code-explanation)
     * [Dataset import](#dataset-import)
     * [Summary of variables](#Summary-of-variables)
-    * [Plots](#Plots)
+    * [Data Visualisation](#Data-Visualisation)
         * [Histograms](#Histograms-of-Variables )
         * [Scatterplots](#Scatterplots-of-pair-of-Variables)
         * [Pairplot](#Pairplot)
-* [Results presentation](#Results-presentation)
-    * [Analysis of the Fishers Iris Data set](#Investigation-of-the-Fishers-Iris-Data-set)
+* [Data Analysis](#Data-analysis)
+    * [Analysis of the Fishers Iris Data set](#Analysis-of-the-Fishers-Iris-Data-set)
     * [Pythons role](#Pythons-role)
 * [Project conclusion](#Conclusion) 
 * [References](#References)
@@ -84,9 +84,13 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ### Dataset import
 
+```python
+    iris = pd.read_csv('data/iris.csv') 
+```
+
 ### Summary of Variables
 
-### Plots
+### Data Visualisation 
 
 #### Histograms of Variables 
 
@@ -106,7 +110,13 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ![](PNG/Histogram_Iris-PetalWidth.png) 
 
-5. Summary of all variables for Sepal Lenght/Width & Petal Length/Width, 
+Code extract for plots 1 - 4 
+
+```python
+    sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") 
+```
+
+**Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
 
 ![](PNG/Histogram_AllVariables.png) 
 
@@ -125,23 +135,28 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting 
 
+![](PNG/Scatterplot_Iris-Sepal.png.png)![](PNG/PNG/Scatterplot_Iris-Petal.png)
+
 #### Pairplot
 
-## Results presentation
+## Data Analysis
 
-### Investigation of the Fisher's Iris Data set
+### Analysis of the Fisher's Iris Data set
 
 #### Analysis of the Scatterplots
 
-1.  
+<img src = "PNG/Scatterplot_Iris-Sepal.png" alt = "Scatterplot_Iris-Sepal" width = 400 height=400><img src = "PNG/Scatterplot_Iris-Petal.png" alt = "Scatterplot_Iris-Petal" width = 400 height=400>
 
-<img src = "PNG/Scatterplot_Iris-Sepal.png" alt = "Scatterplot_Iris-SepalSepal" width = 400 height=400><img src = "PNG/Scatterplot_Iris-Petal.png" alt = "Scatterplot_Iris-Petal" width = 400 height=400>
+**Figure 8: Scatterplot of the iris data set for sepal length vs width (left) and for petal length vs width (right)**
 
-**Figure 8: Scatterplot of the iris data set for sepal length vs sepal width (left) and for petal length vs petal width (right)**
+The scatterplot above show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris Setosa, Iris versicolar and Iris virginica. All quantities are measured in the unit centimeters(cm). In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However if the petal leaf scatterplot on the right is taken into account even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
+
+Noticeable is that the left graphs seems to show less data entries for Iris setosa compared to the right graph. Knowing that their are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. 
 
 ### Pythons role
-
+Advantages of python versus other data analysis programs/tools such as Matlab, SPSS, Minitab, 
 ## Conclusion
+
 
 ## References
 
@@ -161,6 +176,11 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 
 ### References and Source: 
 Dataset: https://archive.ics.uci.edu/ml/datasets/Iris
+
+Books: 
+Data analysis of Scatterplots: https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false  
+Guide to Intelligent Data Analysis: How to Intelligently Make Sense of Real Data, 
+By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Springer Verlag Page 45 to 47 
 
 ### GitHub formatting 
 [PNG added to readme] (https://www.youtube.com/watch?v=hHbWF1Bvgf4)

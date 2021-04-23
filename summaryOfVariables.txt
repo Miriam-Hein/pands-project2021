@@ -10,6 +10,6 @@ max    150.000000       7.900000      4.400000       6.900000      2.500000
 
 Number of samples available for each species
 Iris-setosa        50
-Iris-versicolor    50
 Iris-virginica     50
+Iris-versicolor    50
 Name: Species, dtype: int64
