@@ -75,15 +75,16 @@ plt.show ()
 
 #Plotting scatterplot of each pair of variables to png files
 #Scatterplot of Sepal Width and Sepal Length features of the Fisher's Iris data
-sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="Species") # https://seaborn.pydata.org/tutorial/relational.html
+sepal = sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="Species") # https://seaborn.pydata.org/tutorial/relational.html
+sepal.legend(loc=4) #Legend location assigned to bottom right corner inside plot window #https://stackoverflow.com/questions/27019079/move-seaborn-plot-legend-to-a-different-position
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Sepal.png')   
 plt.show ()
 
 #Scatterplot of Petal Length and Petal Width features of the Fisher's Iris data
-sns.relplot(x="PetalLengthCm", y="PetalWidthCm", hue="Species", legend = "auto", data=iris)
-
+petal = sns.scatterplot(data=iris, x="PetalLengthCm", y="PetalWidthCm", hue="Species")
+petal.legend(loc=2) #Legend location assigned to top left corner
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Petal.png')   
