@@ -33,16 +33,11 @@ It will include background information about the data set used and will explain 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
 <p align="center">
-
-![](PNG/Fig1_IrisSpecies.png) 
-
+<img src = "PNG/Fig1_IrisSpecies.png" alt = "Iris Species" width = 400 height=400>
 </p>
-
-<p align="center">
 
 **Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [1]**
 
-</p>
 
 Why this plant is described here is as follows:
 
@@ -55,11 +50,8 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
    - the width of the petal in cm (“petalwidth”); 
    - the species of flower ("class"). [2]
 
-<p align="center">
-
 ![](PNG/Fig2_IrisDataset.png) [2]
 
-</p>
 **Figure 2: Morphological Measures of Iris Flowers [1]**
 
 ### Python Analytics tool 
@@ -110,23 +102,26 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
 <p align="center">
-
-![](PNG/Histogram_Iris-SepalLength.png) 
-
+<img src = "PNG/Histogram_Iris-SepalLength.png" alt = "Iris Sepal Length in cm" width = 400 height=400>
 </p>
 
 2. Width of sepal leaf in cm ("SepalWidthCm")
+
 <p align="center">
-![](PNG/Histogram_Iris-SepalWidth.png) 
+<img src = "PNG/Histogram_Iris-SepalWidth.png" alt = "Iris Sepal Width in cm" width = 400 height=400>
 </p>
+
 3. Length of petal leaf in cm ("PetalWidthCm") 
 <p align="center">
-![](PNG/Histogram_Iris-PetalWidth.png) 
+<img src = "PNG/Histogram_Iris-PetalWidth.png" alt = "Iris Petal Width in cm" width = 400 height=400>
 </p>
+
 4. Width of petal leaf in cm ("PetalLengthCm")
+
 <p align="center">
-![](PNG/Histogram_Iris-PetalWidth.png) 
+<img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 400 height=400>
 </p>
+
 Code extract for plots 1 - 4 
 
 ```python
@@ -134,11 +129,11 @@ Code extract for plots 1 - 4
 ```
 
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
+
 <p align="center">
-
-![](PNG/Histogram_AllVariables.png) 
-
+<img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted" width = 400 height=400>
 </p>
+
 ```python
     f,a = plt.subplots(2,2)
     a = a.ravel()
@@ -153,8 +148,6 @@ Code extract for plots 1 - 4
 #### Scatterplots of pair of Variables 
 
 A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting 
-
-![](PNG/Scatterplot_Iris-Sepal.png.png)![](PNG/PNG/Scatterplot_Iris-Petal.png)
 
 #### Pairplot
 
