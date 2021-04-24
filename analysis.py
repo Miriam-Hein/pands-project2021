@@ -17,11 +17,14 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 # Load dataset (Fisher's Iris Data Set) using pandas
 iris = pd.read_csv('data/iris.csv') # pd.read_csv is used because pandas library was imported, see pd.command (pd short for pandas as defined above). (https://datacarpentry.org/python-ecology-lesson/02-starting-with-data/, https://mer.vin/2019/08/seaborn-to-visualize-iris-data/) # CSV stands for Comma-Separated Values
 
+# removing Id column
+new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] # Creating a new iris dataset with only the columes required for the plot
+
 # Creating a text file with Access mode write-only
 with open ('summaryOfVariables.txt', 'w') as file: # Write-only mode: 'w' opens file for writing and creates a file or overwrites any existing files. File pointer is placed at the beginning of the file. 
      file.write (str('Summary of variables for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
      file.write(str('\n'))
-     file.write(str(iris.describe())) # https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html
+     file.write(str(new_iris.describe())) # https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html
 # Appending the text file created with Access mode append
 with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file for appending. Starts writing at the end of the file. Creates new file if file is not existing. 
      file.write(str('\n')) # Creates new lines in the text file for better readability 
@@ -81,7 +84,7 @@ sepal = sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="S
 sepal.legend(loc=4) #Legend location assigned to bottom right corner inside plot window #https://stackoverflow.com/questions/27019079/move-seaborn-plot-legend-to-a-different-position
 
 #Save this plot as file
-plt.savefig('PNG/Scatterplot_Iris-Sepal_Jitter.png')   
+plt.savefig('PNG/Scatterplot_Iris-Sepal.png')   
 plt.show ()
 
 #Scatterplot of Petal Length and Petal Width features of the Fisher's Iris data
