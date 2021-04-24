@@ -1,9 +1,10 @@
 # Final project for the course Programming and Scripting 2021
-
+<div align="justify">
 This repository include the Final Project 2021 for the Module Programming and Scripting. 
 
 This project contains the research of the ***Fisher's Iris data set*** which will be investigated in Python and a summary will be provided in this readme file. 
 It will include background information about the data set used and will explain what investigating a data set entails and how Python can be used to do this. 
+</div>
 
 ## Table of contents
 * [Background](#Background)
@@ -56,9 +57,7 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 <img src = "PNG/Fig2_IrisDataset.png" alt = "Original Iris Data Set extract">
 </p>
 
-[2]
-
-**Figure 2: Morphological Measures of Iris Flowers [1]**
+**Figure 2: Morphological Measures of Iris Flowers [2]**
 
 ### Python Analytics tool 
 
@@ -226,6 +225,9 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 
 ## Entries and Updates 
 
+<details>
+<summary>"Click to expand"</summary>
+
 11MAR21: Creation of git hub repository 
 23MAR21: 
   - Uploaded dataset. Download dataset from https://archive.ics.uci.edu/ml/datasets/Iris.
@@ -247,4 +249,11 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 23APR21:
   - updated Readme file 
        - Table of Content as per structure of the readme file
-  - 
+  - Scatterplot created for Iris Petal Width vs Length & for Iris Sepal Width vs Length 
+  - Wrote text to add to Analysis of the scatterplots
+  - Research jitter
+24APR21:
+  - Formatting of readme (picture position center, text alignment justify)
+  - Added collaps section for Entries and Updates
+
+</details>
