@@ -73,15 +73,24 @@ The following libraries were used in this project:
    import matplotlib.pyplot as plt 
    import seaborn as sns 
 ```
+<div align="justify">
 
 ***pandas*** stands for "Python Data Analysis" and was created as an open source by Wes McKinney.
 This project uses the library to take data directly from the csv file uploaded. This library creates a Python object with rows and columnes called dataframe (oftne refer to in code as df) which allows to work with a "table like" structure rather having to work with lists and/or directories using for loops/list comprehension. A "nickname"/ short for pandas has been created for better usability to access Pandas with "pd.command" instead of having to use "pandas.command". Numpy is usually used in combination with pandas. 
 [4]
+</div>
+
+<div align="justify">
 
 ***numPy*** stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. 
 [5]
+</div>
+
+<div align="justify">
 
 ***matplotlib***
+
+</div>
 
 ***seaborn***
 
@@ -93,7 +102,9 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ### Dataset import
 
+<div align="justify">
 Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called iris.csv. The library panda allows to read the file in csv format. For usability the data set was assigned to a variable called ***iris***, which is used in any further code. See below code extract used in analysis.py. 
+</div>
 
 ```python
     iris = pd.read_csv('data/iris.csv') 
@@ -167,12 +178,16 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 
 **Figure 8: Scatterplot of the iris data set for sepal length vs width (left) and for petal length vs width (right)**
 
+<div align="justify">
 The scatterplot above show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris Setosa, Iris versicolar and Iris virginica. All quantities are measured in the unit centimeters(cm). In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However if the petal leaf scatterplot on the right is taken into account even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
 
 Noticeable is that the left graphs seems to show less data entries for Iris setosa compared to the right graph. Knowing that their are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. 
+</div>
 
 ### Pythons role
+
 Advantages of python versus other data analysis programs/tools such as Matlab, SPSS, Minitab, 
+
 ## Conclusion
 
 
