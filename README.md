@@ -229,6 +229,7 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 <summary>"Click to expand"</summary>
 
 11MAR21: Creation of git hub repository 
+
 23MAR21: 
   - Uploaded dataset. Download dataset from https://archive.ics.uci.edu/ml/datasets/Iris.
       changed iris.data to iris.csv. Added Column titles to 
@@ -239,21 +240,26 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
         5. class
       as per iris.names file section 7 Attributes. 
   - Started summary of the Fisher's Iris Dataset
+
 27MAR21 - 11APR21: 
   - Easter break
+
 19APR21: 
   - updated dataset from https://www.geeksforgeeks.org/box-plot-and-histogram-exploration-on-iris-data/ due to issues of unnamed columns. 
+
 22APR21: 
   - created histograms of all variable using code in analysis.py and updated readme file
   - added Table of Content to the readme file (sorce https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
+
 23APR21:
   - updated Readme file 
        - Table of Content as per structure of the readme file
   - Scatterplot created for Iris Petal Width vs Length & for Iris Sepal Width vs Length 
-  - Wrote text to add to Analysis of the scatterplots
+  - Wrote text to add to Analysis of the scatterplots (https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false)
   - Research jitter
+
 24APR21:
-  - Formatting of readme (picture position center, text alignment justify)
-  - Added collaps section for Entries and Updates
+  - Formatting of readme (picture position center, text alignment justify)(https://github.com/DavidWells/advanced-markdown/blob/master/README.md#why-markdown)
+  - Added collaps section for Entries and Updates (https://github.com/DavidWells/advanced-markdown/blob/master/README.md#why-markdown)
 
 </details>
