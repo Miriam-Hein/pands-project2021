@@ -33,7 +33,7 @@ It will include background information about the data set used and will explain 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
 <p align="center">
-<img src = "PNG/Fig1_IrisSpecies.png" alt = "Iris Species" width = 400 height=400>
+<img src = "PNG/Fig1_IrisSpecies.png" alt = "Iris Species" >
 </p>
 
 **Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [1]**
