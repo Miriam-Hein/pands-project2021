@@ -32,10 +32,12 @@ It will include background information about the data set used and will explain 
 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
+<p align="center">
 ![](PNG/Fig1_IrisSpecies.png) 
 
-**Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [1]**
 
+**Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [1]**
+</p>
 Why this plant is described here is as follows:
 
 Sir Ronald Aylmer Fisher was a British statistician and geneticist who published *“The Use of Multiple Measurements in Taxonomic Problems”* in the journal *“Annals of Eugenics”* in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the *Fisher’s Iris dataset*. This dataset is also called *Anderson’s Iris dataset* because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3]
@@ -47,8 +49,9 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
    - the width of the petal in cm (“petalwidth”); 
    - the species of flower ("class"). [2]
 
+<p align="center">
 ![](PNG/Fig2_IrisDataset.png) [2]
-
+</p>
 **Figure 2: Morphological Measures of Iris Flowers [1]**
 
 ### Python Analytics tool 
@@ -98,20 +101,22 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
+<p align="center">
 ![](PNG/Histogram_Iris-SepalLength.png) 
+</p>
 
 2. Width of sepal leaf in cm ("SepalWidthCm")
-
+<p align="center">
 ![](PNG/Histogram_Iris-SepalWidth.png) 
-
+</p>
 3. Length of petal leaf in cm ("PetalWidthCm") 
-
+<p align="center">
 ![](PNG/Histogram_Iris-PetalWidth.png) 
-
+</p>
 4. Width of petal leaf in cm ("PetalLengthCm")
-
+<p align="center">
 ![](PNG/Histogram_Iris-PetalWidth.png) 
-
+</p>
 Code extract for plots 1 - 4 
 
 ```python
@@ -119,9 +124,9 @@ Code extract for plots 1 - 4
 ```
 
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
-
+<p align="center">
 ![](PNG/Histogram_AllVariables.png) 
-
+</p>
 ```python
     f,a = plt.subplots(2,2)
     a = a.ravel()
