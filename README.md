@@ -29,6 +29,11 @@ It will include background information about the data set used and will explain 
 
 ## Background
 
+<div align="justify">
+The background section is an introduction to this Project. It will give some background information about the data set used to analyse and interpret using Python as data anlysis tool. 
+It will give a brief description about libraries that were used throughout the code implementation and what is required to run this code. 
+</div>
+
 ### Summary of the Fisher's Iris data set
 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
@@ -40,7 +45,7 @@ The *iris* is a genus of plants with around 260-300 different species with eithe
 **Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [1]**
 
 
-Why this plant is described here is as follows:
+Why this flower is described here is as follows:
 
 <div align="justify">
 Sir Ronald Aylmer Fisher was a British statistician and geneticist who published *“The Use of Multiple Measurements in Taxonomic Problems”* in the journal *“Annals of Eugenics”* in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the *Fisher’s Iris dataset*. This dataset is also called *Anderson’s Iris dataset* because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3]
@@ -61,6 +66,7 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 ### Python Analytics tool 
 
+Python is a programming language created
 
 #### Libraries 
 
@@ -102,7 +108,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 ### Dataset import
 
 <div align="justify">
-Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called iris.csv. The library panda allows to read the file in csv format. For usability the data set was assigned to a variable called ***iris***, which is used in any further code. See below code extract used in analysis.py. 
+Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called iris.csv. The library panda allows to read the file in csv format. For usability the data set was assigned to a variable called *iris*, which is used in any further code. See below code extract used in analysis.py. 
 </div>
 
 ```python
@@ -228,7 +234,8 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 <details>
 <summary>"Click to expand"</summary>
 
-11MAR21: Creation of git hub repository 
+11MAR21: 
+  - Creation of git hub repository 
 
 23MAR21: 
   - Uploaded dataset. Download dataset from https://archive.ics.uci.edu/ml/datasets/Iris.
