@@ -102,24 +102,24 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
 <p align="center">
-<img src = "PNG/Histogram_Iris-SepalLength.png" alt = "Iris Sepal Length in cm" width = 400 height=400>
+<img src = "PNG/Histogram_Iris-SepalLength.png" alt = "Iris Sepal Length in cm" width = 600 height= 350>
 </p>
 
 2. Width of sepal leaf in cm ("SepalWidthCm")
 
 <p align="center">
-<img src = "PNG/Histogram_Iris-SepalWidth.png" alt = "Iris Sepal Width in cm" width = 400 height=400>
+<img src = "PNG/Histogram_Iris-SepalWidth.png" alt = "Iris Sepal Width in cm" width = 600 height= 350>
 </p>
 
 3. Length of petal leaf in cm ("PetalWidthCm") 
 <p align="center">
-<img src = "PNG/Histogram_Iris-PetalWidth.png" alt = "Iris Petal Width in cm" width = 400 height=400>
+<img src = "PNG/Histogram_Iris-PetalWidth.png" alt = "Iris Petal Width in cm" width = 600 height= 350>
 </p>
 
 4. Width of petal leaf in cm ("PetalLengthCm")
 
 <p align="center">
-<img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 400 height=400>
+<img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 600 height= 350>
 </p>
 
 Code extract for plots 1 - 4 
@@ -131,7 +131,7 @@ Code extract for plots 1 - 4
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
 
 <p align="center">
-<img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted" width = 400 height=400>
+<img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted">
 </p>
 
 ```python
