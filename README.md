@@ -50,7 +50,11 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
    - the width of the petal in cm (“petalwidth”); 
    - the species of flower ("class"). [2]
 
-![](PNG/Fig2_IrisDataset.png) [2]
+<p align="center">
+<img src = "PNG/Fig2_IrisDataset.png" alt = "Original Iris Data Set extract">
+</p>
+
+[2]
 
 **Figure 2: Morphological Measures of Iris Flowers [1]**
 
