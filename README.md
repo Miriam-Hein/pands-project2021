@@ -84,6 +84,8 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 ### Dataset import
 
+Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called iris.csv. The library panda allows to read the file in csv format. For usability the data set was assigned to a variable called ***iris***, which is used in any further code. See below code extract used in analysis.py. 
+
 ```python
     iris = pd.read_csv('data/iris.csv') 
 ```
