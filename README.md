@@ -33,11 +33,17 @@ It will include background information about the data set used and will explain 
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
 <p align="center">
+
 ![](PNG/Fig1_IrisSpecies.png) 
 
+</p>
+
+<p align="center">
 
 **Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [1]**
+
 </p>
+
 Why this plant is described here is as follows:
 
 Sir Ronald Aylmer Fisher was a British statistician and geneticist who published *“The Use of Multiple Measurements in Taxonomic Problems”* in the journal *“Annals of Eugenics”* in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the *Fisher’s Iris dataset*. This dataset is also called *Anderson’s Iris dataset* because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3]
@@ -50,7 +56,9 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
    - the species of flower ("class"). [2]
 
 <p align="center">
+
 ![](PNG/Fig2_IrisDataset.png) [2]
+
 </p>
 **Figure 2: Morphological Measures of Iris Flowers [1]**
 
@@ -102,7 +110,9 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
 <p align="center">
+
 ![](PNG/Histogram_Iris-SepalLength.png) 
+
 </p>
 
 2. Width of sepal leaf in cm ("SepalWidthCm")
@@ -125,7 +135,9 @@ Code extract for plots 1 - 4
 
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
 <p align="center">
+
 ![](PNG/Histogram_AllVariables.png) 
+
 </p>
 ```python
     f,a = plt.subplots(2,2)
@@ -182,20 +194,21 @@ Advantages of python versus other data analysis programs/tools such as Matlab, S
 
 
 ### References and Source: 
-Dataset: https://archive.ics.uci.edu/ml/datasets/Iris
+[Dataset](https://archive.ics.uci.edu/ml/datasets/Iris)
 
-Books: 
+Books references: 
 Data analysis of Scatterplots: https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false  
 Guide to Intelligent Data Analysis: How to Intelligently Make Sense of Real Data, 
 By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Springer Verlag Page 45 to 47 
 
 ### GitHub formatting 
-[PNG added to readme] (https://www.youtube.com/watch?v=hHbWF1Bvgf4)
-[Basic writing and formatting syntax in GitHub] https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
-[Fenced code block added to readme] (https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
+[PNG added to readme](https://www.youtube.com/watch?v=hHbWF1Bvgf4)
+[Basic writing and formatting syntax in GitHub](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
+[Fenced code block added to readme](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
+[Position of pngs in readme](https://github.com/DavidWells/advanced-markdown/blob/master/README.md)
 
 ### Other repositiories
-[GitHub repository] (https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
+[GitHub repository](https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
 
 ## Entries and Updates 
 
