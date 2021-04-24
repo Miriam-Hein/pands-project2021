@@ -41,7 +41,7 @@ The *iris* is a genus of plants with around 260-300 different species with eithe
 
 Why this plant is described here is as follows:
 
-<div dir="rtl">
+<div align="justify">
 Sir Ronald Aylmer Fisher was a British statistician and geneticist who published *“The Use of Multiple Measurements in Taxonomic Problems”* in the journal *“Annals of Eugenics”* in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the *Fisher’s Iris dataset*. This dataset is also called *Anderson’s Iris dataset* because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3]
 </div>
 
