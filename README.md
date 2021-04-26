@@ -28,28 +28,28 @@ It will include background information about the data set used and will explain 
 
 
 ## Background
-
 <div align="justify">
-The background section is an introduction to this Project. It will give some background information about the data set used to analyse and interpret using Python as data anlysis tool. 
-It will give a brief description about libraries that were used throughout the code implementation and what is required to run this code. 
+The <b>Background</b> section is an introduction to this Project. It will give some background information about the data set used which then was visualised with Python as data anlysis tool and third party packages. 
+This section will therefore also give a brief description of the libraries that were used throughout the code implementation and what are the requirements to run the code programmed in <i>analysis.py</i>. 
 </div>
 
 ### Summary of the Fisher's Iris data set
-
+<div align="justify">
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
+</div>
 
 <p align="center">
 <img src = "PNG/Fig1_IrisSpecies.png" alt = "Iris Species" >
 </p>
+<div align="center">
 
 **Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [i]**
-
+</div>
 
 Why this flower is described here is as follows:
 
 <div align="justify">
 Sir Ronald Aylmer Fisher was a British statistician and geneticist who published *“The Use of Multiple Measurements in Taxonomic Problems”* in the journal *“Annals of Eugenics”* in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the *Fisher’s Iris dataset*. This dataset is also called *Anderson’s Iris dataset* because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3]
-</div>
 
 The dataset contains values of 50 flowers of the three flower species *“Iris setosa”*, *“Iris versicolor”* and *“Iris virginica”*. For each flower, the following information was collected:
    - the length of the sepal leaf in cm ("sepalLength");
@@ -57,7 +57,7 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
    - the length of the petal in cm (“petalLength”);
    - the width of the petal in cm (“petalwidth”); 
    - the species of flower ("class"). [2]
-
+</div>
 <p align="center">
 <img src = "PNG/Fig2_IrisDataset.png" alt = "Original Iris Data Set extract">
 </p>
@@ -67,8 +67,9 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 </div>
 
 ### Python Analytics tool 
-
+<div align="justify">
 Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as NumPy, Pandas
+</div>
 
 #### Libraries 
 
