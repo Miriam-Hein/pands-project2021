@@ -142,17 +142,14 @@ with open ('summaryOfVariables.txt', 'a') as file:
 ### Data Visualisation 
 
 <div align="justify">
-Data visualization is the graphic representation of information and data. By using visual elements such as charts, graphs, and maps, the data displayed can provide valuable information to help you see and understand trends, outliers, and specific patterns in the data. The data can then be used to make decisions, such as making future predictions, or to check the effectiveness of a procedure. The human eye cannot easily interpret data from a table or in this project from a CSV (comma separated values) file; this would require i.e. calculations. The presentation of the data therefore plays a major role, since people can process visual impressions very easily and can usually even interpret them without prior knowledge. A colour change from red to blue can be used or a difference in shape such as a circle compared to a triangle can be easily recognized and help with the interpretation. 
-[16] 
+Data visualization is the graphic representation of information and data. By using visual elements such as charts, graphs, and maps, the data displayed can provide valuable information to help you see and understand trends, outliers, and specific patterns in the data. The data can then be used to make decisions, such as making future predictions, or to check the effectiveness of a procedure. The human eye cannot easily interpret data from a table or in this project from a CSV (comma separated values) file; this would require i.e. calculations. The presentation of the data therefore plays a major role, since people can process visual impressions very easily and can usually even interpret them without prior knowledge. A colour change from red to blue can be used or a difference in shape such as a circle compared to a triangle can be easily recognized and help with the interpretation. Therefore, in the following chapter, the Fisher’s Iris data set was visualised, and histograms and scatter diagrams were designed for this purpose. [16] 
 </div>
 
-
-
-
 #### Histograms of Variables 
+
 Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals. 
 
-The below Histograms have been created using the seaborn library, see Code extract for plots 1 - 4 below:
+The below Histograms have been created using the seaborn library with the x value varying, see Code extract for plots 1 - 4 below:
 
 ```python
     sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") 
@@ -217,6 +214,10 @@ Every time the program runs the plots are shown one after another. The program c
 A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting 
 
 #### Pairplot
+
+<p align="center">
+<img src = "PNG/Pairplot_CombinationSepalPetal.png" alt = "Pairplot of Sepal vs Petal Width/Length in Cm" width = 600 height= 350>
+</p>
 
 ## Data Analysis
 
