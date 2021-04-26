@@ -216,7 +216,7 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 #### Pairplot
 
 <p align="center">
-<img src = "PNG/Pairplot_CombinationSepalPetal.png" alt = "Pairplot of Sepal vs Petal Width/Length in Cm">
+<img src="PNG/Pairplot_CombinationsSepalPetal.png" alt="Pairplot of Sepal vs Petal Width/Length in Cm">
 </p>
 
 ## Data Analysis
