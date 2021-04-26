@@ -66,15 +66,15 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 ### Python Analytics tool 
 
-Python is a programming language created
+Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as NumPy, Pandas
 
 #### Libraries 
 
-The following libraries were used in this project:    
+The following libraries were imported in this project:    
 
 ```python
    import pandas as pd 
-   import numpy as np
+  # import numpy as np
    import matplotlib.pyplot as plt 
    import seaborn as sns 
 ```
@@ -87,13 +87,13 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 <div align="justify">
 
-***numPy*** stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. 
+***numPy*** stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. It is used for the manipulation of Python objects also called multi-dimensional array-based data and is the main package for scientific computing with Python. The arrays include collected values. 
 [5]
 </div>
 
 <div align="justify">
 
-***matplotlib***
+***matplotlib*** is a library used to mimic the functions of MATLAB, which is a programming and numeric computing platform to analyse data, develop algorithms and to create models for example with the build in package Simulink. Each pyplot function does a change to a figure, for example it creates a figure, decorates plots with labels and titles and saves the figure (all examples used in this project).
 
 </div>
 
@@ -120,6 +120,8 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 ### Data Visualisation 
 
 #### Histograms of Variables 
+
+
 
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
@@ -151,6 +153,8 @@ Code extract for plots 1 - 4
 ```
 
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
+
+<ins>Histograms in Matplotlib:</ins> Wikipedia describs Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values devided by the entire range of values into a series of intervals. 
 
 <p align="center">
 <img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted">
@@ -214,6 +218,10 @@ Advantages of python versus other data analysis programs/tools such as Matlab, S
 
 ### References and Source: 
 [Dataset](https://archive.ics.uci.edu/ml/datasets/Iris)
+[NumPy](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
+(https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2FNWTQH.png&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F66434570%2Fnumpys-shape-function-returns-a-1d-value-for-a-2d-array&tbnid=3mLgD0we3AuveM&vet=12ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ..i&docid=ZjuYBSiXmg5NpM&w=1440&h=805&q=multi-dimensional%20arrays%20in%20numpy&ved=2ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ) (not used currently)
+[Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=matplotlib.,the%20plot%20with%20labels%2C%20etc.)
+[Hue](https://en.wikipedia.org/wiki/Hue)
 
 Books references: 
 Data analysis of Scatterplots: https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false  

@@ -65,7 +65,7 @@ new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm
 f,a = plt.subplots(2,2) # defines subplot display structure
 a = a.ravel() # a = array
 for idx,ax in enumerate(a):
-    ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85) 
+    ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa', alpha=0.7, rwidth=0.85, facecolor='C0', edgecolor='C0') # https://www.pythonprogramming.in/plot-histogram-with-specific-color-edge-color-and-line-width.html
     ax.set_title(new_iris.columns[idx])
     ax.set_ylabel('Count') # https://stackoverflow.com/questions/53311685/difference-between-ax-set-xlabel-and-ax-xaxis-set-label-in-matplotlib-3-0-1
     ax.set_xlabel(new_iris.columns[idx])
