@@ -203,35 +203,43 @@ Advantages of python versus other data analysis programs/tools such as Matlab, S
 ## References
 
 ### References Summary of Fisher's Iris data set: 
-[1] https://en.wikipedia.org/wiki/Iris_(plant) 
-[2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
-[3] https://en.wikipedia.org/wiki/Iris_flower_data_set
+[1] [Iris flower](https://en.wikipedia.org/wiki/Iris_(plant)) 
+
+[2] [Background Fisher's Iris Dataset](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
+
+[3] [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+
+### References Python Analytic Tool
+[4] [Pandas](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
+
+[5] [NumPy](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
+
+[not used](https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2FNWTQH.png&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F66434570%2Fnumpys-shape-function-returns-a-1d-value-for-a-2d-array&tbnid=3mLgD0we3AuveM&vet=12ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ..i&docid=ZjuYBSiXmg5NpM&w=1440&h=805&q=multi-dimensional%20arrays%20in%20numpy&ved=2ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ)
+
+[Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=matplotlib.,the%20plot%20with%20labels%2C%20etc.)
 
 ### References Analysis of the Fisher's Iris Dataset
-[4](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
-[5](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
-
-### PNG references 
-[1] Iris flower: https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
-[2] https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5 
-
-
-### References and Source: 
 [Dataset](https://archive.ics.uci.edu/ml/datasets/Iris)
-[NumPy](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
-(https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2FNWTQH.png&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F66434570%2Fnumpys-shape-function-returns-a-1d-value-for-a-2d-array&tbnid=3mLgD0we3AuveM&vet=12ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ..i&docid=ZjuYBSiXmg5NpM&w=1440&h=805&q=multi-dimensional%20arrays%20in%20numpy&ved=2ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ) (not used currently)
-[Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=matplotlib.,the%20plot%20with%20labels%2C%20etc.)
+
 [Hue](https://en.wikipedia.org/wiki/Hue)
 
 Books references: 
-Data analysis of Scatterplots: https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false  
+[Data analysis of Scatterplots](https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false) 
+
 Guide to Intelligent Data Analysis: How to Intelligently Make Sense of Real Data, 
 By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Springer Verlag Page 45 to 47 
 
+### PNG references 
+[1] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
+[2] [Original Dataset extract](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
+
 ### GitHub formatting 
 [PNG added to readme](https://www.youtube.com/watch?v=hHbWF1Bvgf4)
+
 [Basic writing and formatting syntax in GitHub](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
+
 [Fenced code block added to readme](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
+
 [Position of pngs in readme](https://github.com/DavidWells/advanced-markdown/blob/master/README.md)
 
 ### Other repositiories
@@ -276,5 +284,10 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 24APR21:
   - Formatting of readme (picture position center, text alignment justify)(https://github.com/DavidWells/advanced-markdown/blob/master/README.md#why-markdown)
   - Added collaps section for Entries and Updates (https://github.com/DavidWells/advanced-markdown/blob/master/README.md#why-markdown)
+
+26APR21: 
+  - Formatting of Matplotlib graph
+  - Readme update of sections Numpy,Matplotlib, Histogram of all varialbes
+
 
 </details>
