@@ -60,9 +60,11 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 <p align="center">
 <img src = "PNG/Fig2_IrisDataset.png" alt = "Original Iris Data Set extract">
+</p>
+<div align="center">
 
 **Figure 2: Morphological Measures of Iris Flowers [ii]**
-</p>
+</div>
 
 ### Python Analytics tool 
 
