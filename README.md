@@ -7,24 +7,34 @@ It will include background information about the data set used and will explain 
 </div>
 
 ## Table of contents
-* [Background](#Background)
-    * [Fishers Iris data set](#Summary-of-the-Fisher's-Iris-data-set)
-    * [Python Analytics tool](#Python-Analytics-tool)
-        * [Libraries](#Libraries)
-        * [Requirements](#Requirements-to-run-Python-code)
-* [Implementation and Code explanation](#Implementation-and-Code-explanation)
-    * [Dataset import](#dataset-import)
-    * [Summary of variables](#Summary-of-variables)
-    * [Data Visualisation](#Data-Visualisation)
-        * [Histograms](#Histograms-of-Variables )
-        * [Scatterplots](#Scatterplots-of-pair-of-Variables)
-        * [Pairplot](#Pairplot)
-* [Data Analysis](#Data-analysis)
-    * [Analysis of the Fishers Iris Data set](#Analysis-of-the-Fishers-Iris-Data-set)
-    * [Pythons role](#Pythons-role)
-* [Project conclusion](#Conclusion) 
-* [References](#References)
-* [Entries and updates](#Entries-and-Updates)
+- [Final project for the course Programming and Scripting 2021](#final-project-for-the-course-programming-and-scripting-2021)
+  - [Table of contents](#table-of-contents)
+  - [Background](#background)
+    - [Summary of the Fisher's Iris data set](#summary-of-the-fishers-iris-data-set)
+    - [Python Analytics tool](#python-analytics-tool)
+      - [Libraries](#libraries)
+      - [Requirements to run Python code](#requirements-to-run-python-code)
+  - [Implementation and Code explanation](#implementation-and-code-explanation)
+    - [Dataset import](#dataset-import)
+    - [Summary of Variables](#summary-of-variables)
+    - [Data Visualisation](#data-visualisation)
+      - [Histograms of Variables](#histograms-of-variables)
+      - [Scatterplots of pair of Variables](#scatterplots-of-pair-of-variables)
+      - [Pairplot](#pairplot)
+  - [Data Analysis](#data-analysis)
+    - [Analysis of the Fisher's Iris Data set](#analysis-of-the-fishers-iris-data-set)
+    - [Analysis of the Histograms](#analysis-of-the-histograms)
+      - [Analysis of the Scatterplots](#analysis-of-the-scatterplots)
+    - [Pythons role](#pythons-role)
+  - [Conclusion](#conclusion)
+  - [References](#references)
+    - [References Summary of Fisher's Iris data set:](#references-summary-of-fishers-iris-data-set)
+    - [References Python Analytic Tool](#references-python-analytic-tool)
+    - [References Analysis of the Fisher's Iris Dataset](#references-analysis-of-the-fishers-iris-dataset)
+    - [PNG references](#png-references)
+    - [GitHub formatting](#github-formatting)
+    - [Other repositiories](#other-repositiories)
+  - [Entries and Updates](#entries-and-updates)
 
 
 ## Background
@@ -36,8 +46,8 @@ This section will therefore also give a brief description of the libraries that 
 ### Summary of the Fisher's Iris data set
 <div align="justify">
 The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
-</div>
 
+</div>
 <p align="center">
 <img src = "PNG/Fig1_IrisSpecies.png" alt = "Iris Species" >
 </p>
@@ -49,14 +59,14 @@ The *iris* is a genus of plants with around 260-300 different species with eithe
 Why this flower is described here is as follows:
 
 <div align="justify">
-Sir Ronald Aylmer Fisher was a British statistician and geneticist who published *“The Use of Multiple Measurements in Taxonomic Problems”* in the journal *“Annals of Eugenics”* in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the *Fisher’s Iris dataset*. This dataset is also called *Anderson’s Iris dataset* because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3]
+Sir Ronald Aylmer Fisher was a British statistician and geneticist who published <i>“The Use of Multiple Measurements in Taxonomic Problems”</i> in the journal <i>“Annals of Eugenics”</i> in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the <i>Fisher’s Iris dataset</i>. This dataset is also called <i>Anderson’s Iris dataset</i> because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3] All quantities are measured in the unit centimeters(cm).
 
 The dataset contains values of 50 flowers of the three flower species *“Iris setosa”*, *“Iris versicolor”* and *“Iris virginica”*. For each flower, the following information was collected:
-   - the length of the sepal leaf in cm ("sepalLength");
-   - the width of the sepal leaf in cm (“sepalWidth”);
-   - the length of the petal in cm (“petalLength”);
-   - the width of the petal in cm (“petalwidth”); 
-   - the species of flower ("class"). [2]
+   - the length of the sepal leaf in cm ("SepalLengthCm");
+   - the width of the sepal leaf in cm (“SepalWidthCm”);
+   - the length of the petal in cm (“PetalLengthCm”);
+   - the width of the petal in cm (“PetalwidthCm”); 
+   - the species of flower ("Species"). [2]
 </div>
 <p align="center">
 <img src = "PNG/Fig2_IrisDataset.png" alt = "Original Iris Data Set extract">
@@ -68,7 +78,7 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 ### Python Analytics tool 
 <div align="justify">
-Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as NumPy, Pandas
+Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as NumPy, Pandas, Matplotlib, seaborn and many more
 </div>
 
 #### Libraries 
@@ -90,7 +100,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 ***numPy*** stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. It is used for the manipulation of Python objects also called multi-dimensional array-based data and is the main package for scientific computing with Python. The arrays include collected values. 
 [5]
 
-***matplotlib*** is a library used to mimic the functions of MATLAB, which is a programming and numeric computing platform to analyse data, develop algorithms and to create models for example with the build in package Simulink. Each pyplot function does a change to a figure, for example it creates a figure, decorates plots with labels and titles and saves the figure (all examples used in this project).
+***matplotlib*** is a library used to mimic the functions of MATLAB, which is a programming and numeric computing platform to analyse data, develop algorithms and to create models for example with the build in package Simulink. Each pyplot function does a change to a figure, for example it creates a figure, decorates plots with labels and titles and saves the figure (all examples used in this project). 
 
 ***seaborn*** is a data visualisation library based on matplotlib making statistical graphs in Python. Seaborn can operate either on dataframes or array containing whole datasets, which is the case for this project (refer to Dataset import). It performs the initial semantic mapping this means the focus is in the different elements of your plot and therefore it is more data-oriented rather than matplotlib where you detail on how the graph is drawn. In the code seaborn requires only the names of the variable and their roles specified. It is not necessary to specify any attributes like color values or marker code.  Behind the scenes, Seaborn translates into arguments matplotlib understands. [7]
 </div>
@@ -112,6 +122,19 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 ```
 
 ### Summary of Variables
+
+```python
+with open ('summaryOfVariables.txt', 'w') as file: 
+     file.write (str('Summary of variables for each species')) 
+     ...
+     file.write(str(new_iris.describe())) 
+with open ('summaryOfVariables.txt', 'a') as file: 
+     ... 
+     file.write (str('Number of samples available for each species')) 
+     ...
+     file.write(str(iris["Species"].value_counts())) 
+```
+
 
 ### Data Visualisation 
 
@@ -151,7 +174,7 @@ Code extract for plots 1 - 4
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
 
 <div align="justify">
-<ins>Histograms in Matplotlib:</ins> Wikipedia describs Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values devided by the entire range of values into a series of intervals. 
+<ins>Histograms in Matplotlib:</ins> Wikipedia describs Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values devided by the entire range of values into a series of intervals. Those intervals are called bins and are specified as consecutive, non-overlapping intervals of a variable. 
 </div>
 
 
@@ -180,16 +203,29 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 
 ### Analysis of the Fisher's Iris Data set
 
+### Analysis of the Histograms
+
+Histograms are used to have a more detailed view of a variable and show the distribution of that variable. [13]
+For all Histrogram it can be noted that all three Species overlap throughout. 
+
 #### Analysis of the Scatterplots
+<div align="justify">
+From histgrams that focus on one single column/one variable of the data set, the scatterplot moves to the visualision of mulitple columns and therefore multiple variables. [12] The 
+Scatterplots is used to show if the varialbes are in a linear relationship. Linearity is important to predict data. Therefore it is always desired to achieve linearisation even if the relationship between variable is initially non-linear, it is desired to transform it towards linearity. [10]
+</div>
 
 <img src = "PNG/Scatterplot_Iris-Sepal.png" alt = "Scatterplot_Iris-Sepal" width = 400 height=400><img src = "PNG/Scatterplot_Iris-Petal.png" alt = "Scatterplot_Iris-Petal" width = 400 height=400>
 
 **Figure 8: Scatterplot of the iris data set for sepal length vs width (left) and for petal length vs width (right)**
 
 <div align="justify">
-The scatterplot above show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris Setosa, Iris versicolar and Iris virginica. All quantities are measured in the unit centimeters(cm). In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However if the petal leaf scatterplot on the right is taken into account even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
+The scatterplot in this project, see above, show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris Setosa, Iris versicolar and Iris virginica. In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However if the petal leaf scatterplot on the right is taken into account even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
+In addition, for the Scatterplot Iris Petal it's data form a clear cloud of points for each species. As this cloud is elongated and resambles a line you can conclude that the varaibles are correlated. [14] 
+Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] 
+In this case for petal length grows the petal width grows too and this is visiable for all three species. Therefore, we can see a relationship between the variable petal length and petal width. In the case of sepal length vs spepal width this relationship is only visible for Iris setosa however not for Iris versicolor and Iris virginica. 
+Although the representation of points that group clouds for each Species (blue, orange and green dots) strongly suggest a possible separability of the groups. [14]
 
-Noticeable is that the left graphs seems to show less data entries for Iris setosa compared to the right graph. Knowing that their are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. 
+Noticeable is that the left graphs seems to show less data entries for Iris setosa compared to the right graph. Knowing that their are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. [11]
 </div>
 
 ### Pythons role
@@ -225,11 +261,23 @@ Advantages of python versus other data analysis programs/tools such as Matlab, S
 
 [8] [Hue](https://en.wikipedia.org/wiki/Hue)
 
+[9] [Histogram using matplotlib](https://www.datacamp.com/community/tutorials/histograms-matplotlib) 
+
+[10] [Linearity](https://books.google.ie/books?id=Y4rwCAAAQBAJ&pg=PA217&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwAXoECAMQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
+
 Books references: 
-[9] [Data analysis of Scatterplots](https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false) 
+[11] [Data analysis of Scatterplots](https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false) 
 
 Guide to Intelligent Data Analysis: How to Intelligently Make Sense of Real Data, 
 By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Springer Verlag Page 45 to 47 
+
+[12] [Scatterplot vs Histogram](https://books.google.ie/books?id=kPOoCwAAQBAJ&pg=PA100&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwAnoECAUQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
+
+[13] [Histograms analysis](https://books.google.ie/books?id=ukOFDwAAQBAJ&pg=PA267&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwBHoECAQQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
+
+[14] [Correlation of Variables in Scatterplots](https://books.google.ie/books?id=ukOFDwAAQBAJ&pg=PA267&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwBHoECAQQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
+
+[15] [Correlation](https://www.jmp.com/en_ca/statistics-knowledge-portal/what-is-correlation.html#:~:text=Correlation%20is%20a%20statistical%20measure,statement%20about%20cause%20and%20effect.)
 
 ### PNG references 
 [i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
