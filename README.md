@@ -42,7 +42,7 @@ The *iris* is a genus of plants with around 260-300 different species with eithe
 <img src = "PNG/Fig1_IrisSpecies.png" alt = "Iris Species" >
 </p>
 
-**Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [1]**
+**Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [i]**
 
 
 Why this flower is described here is as follows:
@@ -62,7 +62,7 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 <img src = "PNG/Fig2_IrisDataset.png" alt = "Original Iris Data Set extract">
 </p>
 
-**Figure 2: Morphological Measures of Iris Flowers [2]**
+**Figure 2: Morphological Measures of Iris Flowers [ii]**
 
 ### Python Analytics tool 
 
@@ -97,7 +97,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 </div>
 
-***seaborn***
+***seaborn*** is a data visualisation library based on matplotlib making statistical graphs in Python. Seaborn can operate either on dataframes or array containing whole datasets, which is the case for this project (refer to Dataset import). It performs the initial semantic mapping this means the focus is in the different elements of your plot and therefore it is more data-oriented rather than matplotlib where you detail on how the graph is drawn. In the code seaborn requires only the names of the variable and their roles specified. It is not necessary to specify any attributes like color values or marker code.  Behind the scenes, Seaborn translates into arguments matplotlib understands. [7]
 
 #### Requirements to run Python code
 
@@ -154,7 +154,10 @@ Code extract for plots 1 - 4
 
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
 
+<div align="justify">
 <ins>Histograms in Matplotlib:</ins> Wikipedia describs Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values devided by the entire range of values into a series of intervals. 
+</div>
+
 
 <p align="center">
 <img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted">
@@ -216,22 +219,26 @@ Advantages of python versus other data analysis programs/tools such as Matlab, S
 
 [not used](https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2FNWTQH.png&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F66434570%2Fnumpys-shape-function-returns-a-1d-value-for-a-2d-array&tbnid=3mLgD0we3AuveM&vet=12ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ..i&docid=ZjuYBSiXmg5NpM&w=1440&h=805&q=multi-dimensional%20arrays%20in%20numpy&ved=2ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ)
 
-[Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=matplotlib.,the%20plot%20with%20labels%2C%20etc.)
+[6] [Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=matplotlib.,the%20plot%20with%20labels%2C%20etc.)
+
+[7] [Seaborn cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)
+    [Seaborn](https://seaborn.pydata.org/introduction.html)
 
 ### References Analysis of the Fisher's Iris Dataset
-[Dataset](https://archive.ics.uci.edu/ml/datasets/Iris)
+[7] [Dataset](https://archive.ics.uci.edu/ml/datasets/Iris)
 
-[Hue](https://en.wikipedia.org/wiki/Hue)
+[8] [Hue](https://en.wikipedia.org/wiki/Hue)
 
 Books references: 
-[Data analysis of Scatterplots](https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false) 
+[9] [Data analysis of Scatterplots](https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false) 
 
 Guide to Intelligent Data Analysis: How to Intelligently Make Sense of Real Data, 
 By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Springer Verlag Page 45 to 47 
 
 ### PNG references 
-[1] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
-[2] [Original Dataset extract](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
+[i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
+
+[ii] [Original Dataset extract](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
 
 ### GitHub formatting 
 [PNG added to readme](https://www.youtube.com/watch?v=hHbWF1Bvgf4)
@@ -241,6 +248,8 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 [Fenced code block added to readme](https://docs.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
 
 [Position of pngs in readme](https://github.com/DavidWells/advanced-markdown/blob/master/README.md)
+
+[Markdown underline text](https://stackoverflow.com/questions/3003476/get-underlined-text-with-markdown)
 
 ### Other repositiories
 [GitHub repository](https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
