@@ -95,3 +95,10 @@ petal.legend(loc=2) #Legend location assigned to top left corner
 plt.savefig('PNG/Scatterplot_Iris-Petal.png')   
 plt.show ()
 
+#Pairplot
+new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm", "Species"]] #to remove Id column 
+combination = sns.pairplot(data= new_iris, hue="Species") # https://seaborn.pydata.org/generated/seaborn.pairplot.html
+
+#Save this plot as file
+plt.savefig('PNG/Scatterplot_CombinationsSepalPetal.png')   
+plt.show ()

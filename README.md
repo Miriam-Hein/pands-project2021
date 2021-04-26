@@ -11,7 +11,7 @@ It will include background information about the data set used and will explain 
   - [Table of contents](#table-of-contents)
   - [Background](#background)
     - [Summary of the Fisher's Iris data set](#summary-of-the-fishers-iris-data-set)
-    - [Python Analytics tool](#python-analytics-tool)
+    - [Python as Data Analytics tool](#python-as-data-analytics-tool)
       - [Libraries](#libraries)
       - [Requirements to run Python code](#requirements-to-run-python-code)
   - [Implementation and Code explanation](#implementation-and-code-explanation)
@@ -22,8 +22,8 @@ It will include background information about the data set used and will explain 
       - [Scatterplots of pair of Variables](#scatterplots-of-pair-of-variables)
       - [Pairplot](#pairplot)
   - [Data Analysis](#data-analysis)
-    - [Analysis of the Fisher's Iris Data set](#analysis-of-the-fishers-iris-data-set)
-    - [Analysis of the Histograms](#analysis-of-the-histograms)
+    - [Analysis of the Fisher's Iris Data set using plot figures](#analysis-of-the-fishers-iris-data-set-using-plot-figures)
+      - [Analysis of the Histograms](#analysis-of-the-histograms)
       - [Analysis of the Scatterplots](#analysis-of-the-scatterplots)
     - [Pythons role](#pythons-role)
   - [Conclusion](#conclusion)
@@ -76,9 +76,10 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 **Figure 2: Morphological Measures of Iris Flowers [ii]**
 </div>
 
-### Python Analytics tool 
+### Python as Data Analytics tool 
 <div align="justify">
-Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as NumPy, Pandas, Matplotlib, seaborn and many more
+Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as NumPy, Pandas, Matplotlib, seaborn and many more it is consitently used as a high level
+data analysation tool. It is an open source which is flexible and continuously improving 
 </div>
 
 #### Libraries 
@@ -138,8 +139,9 @@ with open ('summaryOfVariables.txt', 'a') as file:
 
 ### Data Visualisation 
 
-#### Histograms of Variables 
 
+
+#### Histograms of Variables 
 
 
 1. Length of the sepal leaf in cm ("SepalLengthCm")
@@ -201,9 +203,10 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 
 ## Data Analysis
 
-### Analysis of the Fisher's Iris Data set
+### Analysis of the Fisher's Iris Data set using plot figures
 
-### Analysis of the Histograms
+
+#### Analysis of the Histograms
 
 Histograms are used to have a more detailed view of a variable and show the distribution of that variable. [13]
 For all Histrogram it can be noted that all three Species overlap throughout. 
