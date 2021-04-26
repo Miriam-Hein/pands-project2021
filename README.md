@@ -45,7 +45,7 @@ This section will therefore also give a brief description of the libraries that 
 
 ### Summary of the Fisher's Iris data set
 <div align="justify">
-The *iris* is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
+The <i>iris</i> is a genus of plants with around 260-300 different species with either yellow, blue or multi-colored petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
 
 </div>
 <p align="center">
@@ -59,7 +59,7 @@ The *iris* is a genus of plants with around 260-300 different species with eithe
 Why this flower is described here is as follows:
 
 <div align="justify">
-Sir Ronald Aylmer Fisher was a British statistician and geneticist who published <i>“The Use of Multiple Measurements in Taxonomic Problems”</i> in the journal <i>“Annals of Eugenics”</i> in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the <i>Fisher’s Iris dataset</i>. This dataset is also called <i>Anderson’s Iris dataset</i> because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2,3] All quantities are measured in the unit centimeters(cm).
+Sir Ronald Aylmer Fisher was a British statistician and geneticist who published <i>“The Use of Multiple Measurements in Taxonomic Problems”</i> in the journal <i>“Annals of Eugenics”</i> in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the <i>Fisher’s Iris dataset</i>. This dataset is also called <i>Anderson’s Iris dataset</i> because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2][3] All quantities are measured in the unit centimeters (cm).
 
 The dataset contains values of 50 flowers of the three flower species *“Iris setosa”*, *“Iris versicolor”* and *“Iris virginica”*. For each flower, the following information was collected:
    - the length of the sepal leaf in cm ("SepalLengthCm");
@@ -88,14 +88,14 @@ The following libraries were imported in this project:
 
 ```python
    import pandas as pd 
-  # import numpy as np
+   import numpy as np
    import matplotlib.pyplot as plt 
    import seaborn as sns 
 ```
 <div align="justify">
 
 ***pandas*** stands for "Python Data Analysis" and was created as an open source by Wes McKinney.
-This project uses the library to take data directly from the csv file uploaded. This library creates a Python object with rows and columnes called dataframe (oftne refer to in code as df) which allows to work with a "table like" structure rather having to work with lists and/or directories using for loops/list comprehension. A "nickname"/ short for pandas has been created for better usability to access Pandas with "pd.command" instead of having to use "pandas.command". Numpy is usually used in combination with pandas. 
+This project uses the library to take data directly from the csv file uploaded. This library creates a Python object with rows and columns called dataframe (often refered to in code as df) which allows to work with a "table like" structure rather having to work with lists and/or directories using for loops/list comprehension. A "nickname"/ short for pandas has been created for better usability to access Pandas with "pd.command" instead of having to use "pandas.command". Numpy is usually used in combination with pandas. 
 [4]
 
 ***numPy*** stands for "Numberical Python" and is the library that pandas, matplotlib and Scikit-learn are build on. It is not as default installed an therefore has to be added. This has been done at the start of this module via Anaconda. It is used for the manipulation of Python objects also called multi-dimensional array-based data and is the main package for scientific computing with Python. The arrays include collected values. 
@@ -115,7 +115,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 ### Dataset import
 
 <div align="justify">
-Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called iris.csv. The library panda allows to read the file in csv format. For usability the data set was assigned to a variable called <i>iris</i>, which is used in any further code. See below code extract used in analysis.py. 
+Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called iris.csv. The library panda allows to read the file in csv format. For usability the data set was assigned to a variable called <i>iris</i>, which is used in any further code. See below code extract used in <i>analysis.py</i>. 
 </div>
 
 ```python
@@ -123,6 +123,8 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 ```
 
 ### Summary of Variables
+
+As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, Sepal length, )
 
 ```python
 with open ('summaryOfVariables.txt', 'w') as file: 
@@ -139,10 +141,29 @@ with open ('summaryOfVariables.txt', 'a') as file:
 
 ### Data Visualisation 
 
+<div align="justify">
+Data visualization is the graphic representation of information and data. By using visual elements such as charts, graphs, and maps, the data displayed can provide valuable information to help you see and understand trends, outliers, and specific patterns in the data. The data can then be used to make decisions, such as making future predictions, or to check the effectiveness of a procedure. The human eye cannot easily interpret data from a table or in this project from a CSV (comma separated values) file; this would require i.e. calculations. The presentation of the data therefore plays a major role, since people can process visual impressions very easily and can usually even interpret them without prior knowledge. A colour change from red to blue can be used or a difference in shape such as a circle compared to a triangle can be easily recognized and help with the interpretation. 
+[16] 
+</div>
+
+
 
 
 #### Histograms of Variables 
+Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals. 
 
+The below Histograms have been created using the seaborn library, see Code extract for plots 1 - 4 below:
+
+```python
+    sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") 
+```
+Each plot has been saved to the folder PNG on the repository using matplotlib. Seaborn as earlier describs translates the plot created into arguments that matplotlib understands. 
+Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. It was decided to show the plot when the program is running to view changes of the code while in progress, however this can be removed once the program is completed as all plots created are saved in the repository in the subfolder PNG. 
+
+```python
+  plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
+  plt.show ()
+```
 
 1. Length of the sepal leaf in cm ("SepalLengthCm")
 
@@ -167,11 +188,7 @@ with open ('summaryOfVariables.txt', 'a') as file:
 <img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 600 height= 350>
 </p>
 
-Code extract for plots 1 - 4 
 
-```python
-    sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") 
-```
 
 **Summary of all variables for Sepal Lenght/Width & Petal Length/Width**
 
@@ -281,6 +298,8 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 [14] [Correlation of Variables in Scatterplots](https://books.google.ie/books?id=ukOFDwAAQBAJ&pg=PA267&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwBHoECAQQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
 
 [15] [Correlation](https://www.jmp.com/en_ca/statistics-knowledge-portal/what-is-correlation.html#:~:text=Correlation%20is%20a%20statistical%20measure,statement%20about%20cause%20and%20effect.)
+
+[16](https://www.tableau.com/learn/articles/data-visualization)
 
 ### PNG references 
 [i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
