@@ -7,8 +7,7 @@ It will include background information about the data set used and will explain 
 </div>
 
 ## Table of contents
-- [Final project for the course Programming and Scripting 2021](#final-project-for-the-course-programming-and-scripting-2021)
-  - [Table of contents](#table-of-contents)
+
   - [Background](#background)
     - [Summary of the Fisher's Iris data set](#summary-of-the-fishers-iris-data-set)
     - [Python as Data Analytics tool](#python-as-data-analytics-tool)
