@@ -48,7 +48,7 @@ plt.savefig('PNG/Histogram_Iris-SepalLength.png')
 plt.show ()
 
 # Histogram for SepalWidthCm
-sns.displot(iris, x="SepalWidthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
+sns.displot(iris, x="SepalWidthCm", hue="Species", element="step") # element="step" is used to resolve overlapping intervals. (https://seaborn.pydata.org/generated/seaborn.histplot.html)
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
 plt.show ()
