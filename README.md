@@ -108,7 +108,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 #### Requirements to run Python code
 
-
+The code was written in Python using the Visual Studio Code Version 1.55.2. The program code of analysis.py should run without any issues if 
 
 ## Implementation and Code explanation
 
@@ -125,7 +125,7 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 ### Summary of Variables
 
 <div align="justify">
-As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the sample size available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. As first Below is a code extract. 
+As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the sample size available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. Below is a code extract. 
 </div>
 
 ```python
@@ -143,7 +143,20 @@ with open ('summaryOfVariables.txt', 'a') as file:
      ...
      file.write(str(new_iris.corr())) 
 ```
+The textfile includes a summary statistic of the numerical values of the dataset and the number of samples per species, displaying the following parameters: 
+  - count
+  - 25th, 50th and 75th percentiles (50% equivalents the median) [18]
+  - mean
+  - standard deviation
+  - minimum value; maximum value
 
+<div align="justify">
+Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spead out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species wiht this parameter. However, this might become clearer once the data has been visualised.  [20]
+
+The textfile also shows the correlation between varialbes. 
+</div>
+
+[] 
 
 ### Data Visualisation 
 
@@ -311,6 +324,10 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 [16] [Data Visualisation](https://www.tableau.com/learn/articles/data-visualization)
 
 [17] [Histogram vs Bargraph](https://www.forbes.com/sites/naomirobbins/2012/01/04/a-histogram-is-not-a-bar-chart/#:~:text=Histograms%20are%20used%20to%20show,bar%20charts%20plot%20categorical%20data.)
+
+[18] [Percentile](https://en.wikipedia.org/wiki/Percentile)
+
+[19] [Standard deviation](https://www.dummies.com/education/math/statistics/how-to-interpret-standard-deviation-in-a-statistical-data-set/)
 
 ### PNG references 
 [i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
