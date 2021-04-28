@@ -27,14 +27,6 @@ It will include background information about the data set used and will explain 
     - [Pythons role](#pythons-role)
   - [Conclusion](#conclusion)
   - [References](#references)
-    - [References Summary of Fisher's Iris data set:](#references-summary-of-fishers-iris-data-set)
-    - [References Python Analytic Tool](#references-python-analytic-tool)
-    - [References Analysis of the Fisher's Iris Dataset](#references-analysis-of-the-fishers-iris-dataset)
-    - [PNG references](#png-references)
-    - [GitHub formatting](#github-formatting)
-    - [Other repositiories](#other-repositiories)
-  - [Entries and Updates](#entries-and-updates)
-
 
 ## Background
 <div align="justify">
