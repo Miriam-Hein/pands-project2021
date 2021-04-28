@@ -142,15 +142,10 @@ The textfile includes a summary statistic of the numerical values of the dataset
   - minimum value; maximum value
 
 <div align="justify">
-Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spread out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species. However, this might become clearer once the data has been visualised. </div> 
+Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spread out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species. However, this might become clearer once the data has been visualised.[19] 
 
-[19]
-<div align="justify">
-The textfile also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. </div>
-
-[15]<div align="justify">
- The correlation coefficient can range from +1 to -1 with +1 (-1) being a perfect positive (or negative) correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a fairly strong positve relationship. With a value around 0.6 the variables have a moderate positive relationship, this works also for negative values i.e. a value of -0.8 is considered to have a fairly strong negative relationship. If the value is positive the graph has a positive slope shape and vica versa. Again the collected information can be verified during the data visulisation. Nevertheless it is already clear that some variables have a strong relationship.
-See below results from syntaxt new_iris.corr().
+The textfile also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15]
+The correlation coefficient can range from +1 to -1 with +1 (-1) being a perfect positive (or negative) correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a fairly strong positve relationship. With a value around 0.6 the variables have a moderate positive relationship, this works also for negative values i.e. a value of -0.8 is considered to have a fairly strong negative relationship. If the value is positive the graph has a positive slope shape and vica versa. Again the collected information can be verified during the data visulisation. Nevertheless it is already clear that some variables have a strong relationship. See below results from syntaxt new_iris.corr().
 </div>
 
 ```text
@@ -161,7 +156,7 @@ SepalWidthCm       -0.109369      1.000000      -0.420516     -0.356544
 PetalLengthCm       0.871754     -0.420516       1.000000      0.962757
 PetalWidthCm        0.817954     -0.356544       0.962757      1.000000
 ```
-<div align="justify">
+
 new_iris was assigned to the dataset to remove the ID/index and the species column in the <i>iris.csv</i> file. This is an easy way to use only the variables that are required. 
 
 ```python
