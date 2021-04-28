@@ -115,7 +115,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 ### Dataset import
 
 <div align="justify">
-Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called iris.csv. The library panda allows to read the file in csv format. For usability the data set was assigned to a variable called <i>iris</i>, which is used in any further code. See below code extract used in <i>analysis.py</i>. 
+Once the data has been downloaded and reviewed for accurracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the subrepository data as csv file called <i>iris.csv</i>. The library panda allows to read the file in csv format. For usability the dataset was read into a dataframe called <i>iris</i>, which is used in any further code. See below code extract used in <i>analysis.py</i>. The function read_csv converts the text-based data into a DataFrame. 
 </div>
 
 ```python
@@ -124,7 +124,7 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 
 ### Summary of Variables
 
-As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, Sepal length, )
+As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the sample size available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. As first Below is a code extract. 
 
 ```python
 with open ('summaryOfVariables.txt', 'w') as file: 
@@ -136,6 +136,10 @@ with open ('summaryOfVariables.txt', 'a') as file:
      file.write (str('Number of samples available for each species')) 
      ...
      file.write(str(iris["Species"].value_counts())) 
+     ...
+     file.write(str('Summary of correlations between variables')) 
+     ...
+     file.write(str(new_iris.corr())) 
 ```
 
 
@@ -147,7 +151,7 @@ Data visualization is the graphic representation of information and data. By usi
 
 #### Histograms of Variables 
 
-Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals. 
+Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals or so called descrete bins. The y-Axis of the graph usually represents the frequency or counts the amount of occurrences in the dataset for concecutive interval. Basically a bar chart only that it focuses on one variable rather than comparing different variables. [17]
 
 The below Histograms have been created using the seaborn library with the x value varying, see Code extract for plots 1 - 4 below:
 
@@ -300,7 +304,9 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 
 [15] [Correlation](https://www.jmp.com/en_ca/statistics-knowledge-portal/what-is-correlation.html#:~:text=Correlation%20is%20a%20statistical%20measure,statement%20about%20cause%20and%20effect.)
 
-[16](https://www.tableau.com/learn/articles/data-visualization)
+[16] [Data Visualisation](https://www.tableau.com/learn/articles/data-visualization)
+
+[17] [Histogram vs Bargraph](https://www.forbes.com/sites/naomirobbins/2012/01/04/a-histogram-is-not-a-bar-chart/#:~:text=Histograms%20are%20used%20to%20show,bar%20charts%20plot%20categorical%20data.)
 
 ### PNG references 
 [i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 

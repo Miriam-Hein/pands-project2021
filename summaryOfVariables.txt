@@ -1,4 +1,4 @@
-Summary of variables for each species
+Summary statistics of variables for each species
        SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
 count     150.000000    150.000000     150.000000    150.000000
 mean        5.843333      3.054000       3.758667      1.198667
@@ -10,7 +10,14 @@ min         4.300000      2.000000       1.000000      0.100000
 max         7.900000      4.400000       6.900000      2.500000
 
 Number of samples available for each species
-Iris-virginica     50
 Iris-setosa        50
 Iris-versicolor    50
+Iris-virginica     50
 Name: Species, dtype: int64
+
+Summary of correlations between variables
+               SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
+SepalLengthCm       1.000000     -0.109369       0.871754      0.817954
+SepalWidthCm       -0.109369      1.000000      -0.420516     -0.356544
+PetalLengthCm       0.871754     -0.420516       1.000000      0.962757
+PetalWidthCm        0.817954     -0.356544       0.962757      1.000000

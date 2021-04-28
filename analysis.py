@@ -14,7 +14,7 @@ import spellchecker
 #Set style for seaborn graphs #http://seaborn.pydata.org/generated/seaborn.set_theme.html#seaborn.set_theme
 sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-serif', font_scale=1, color_codes=True, rc=None)
 
-# Load dataset (Fisher's Iris Data Set) using pandas
+# Load dataset (Fisher's Iris Data Set) using pandas from a file, uses comma as default delimiter
 iris = pd.read_csv('data/iris.csv') # pd.read_csv is used because pandas library was imported, see pd.command (pd short for pandas as defined above). (https://datacarpentry.org/python-ecology-lesson/02-starting-with-data/, https://mer.vin/2019/08/seaborn-to-visualize-iris-data/) # CSV stands for Comma-Separated Values
 
 # removing Id column
@@ -22,7 +22,7 @@ new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm
 
 # Creating a text file with Access mode write-only
 with open ('summaryOfVariables.txt', 'w') as file: # Write-only mode: 'w' opens file for writing and creates a file or overwrites any existing files. File pointer is placed at the beginning of the file. 
-     file.write (str('Summary of variables for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+     file.write(str('Summary statistics of variables for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
      file.write(str('\n'))
      file.write(str(new_iris.describe())) # https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/06_calculate_statistics.html
 # Appending the text file created with Access mode append
@@ -32,6 +32,12 @@ with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file
      file.write (str('Number of samples available for each species')) #https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
      file.write(str('\n'))
      file.write(str(iris["Species"].value_counts())) # https://www.kaggle.com/biphili/seaborn-matplotlib-iris-data-visualization-code-1
+     file.write(str('\n')) # Creates new lines in the text file for better readability 
+     file.write(str('\n'))
+     file.write(str('Summary of correlations between variables')) 
+     file.write(str('\n')) 
+     file.write(str(new_iris.corr())) # Data Analysis and Visualization Using Python, Author: Dr. Ossama Embara, Page 281
+  
    
 
 #Plotting histogram of each variable to png files
@@ -39,25 +45,25 @@ with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file
 sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalLength.png')   
-plt.show ()
+#plt.show ()
 
 # Histogram for SepalWidthCm
 sns.displot(iris, x="SepalWidthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
-plt.show ()
+#plt.show ()
 
 # Histogram for PetalLengthCm
 sns.displot(iris, x="PetalLengthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalLength.png')   
-plt.show ()
+#plt.show ()
 
 # Histogram for PetalWidthCm
 sns.displot(iris, x="PetalWidthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalWidth.png')   
-plt.show ()
+#plt.show ()
 
 # removing Id column
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] # Creating a new iris dataset with only the columes required for the plot
@@ -73,7 +79,7 @@ plt.tight_layout() # it automatically adjusts the subplots parameters so that al
 
 #Save this plot as file
 plt.savefig('PNG/Histogram_AllVariables.png')   
-plt.show ()
+#plt.show ()
 
 
 #plt.figure(figsize=[10,10]) # https://www.datacamp.com/community/tutorials/histograms-matplotlib
@@ -85,7 +91,7 @@ sepal.legend(loc=4) #Legend location assigned to bottom right corner inside plot
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Sepal.png')   
-plt.show ()
+#plt.show ()
 
 #Scatterplot of Petal Length and Petal Width features of the Fisher's Iris data
 petal = sns.scatterplot(data=iris, x="PetalLengthCm", y="PetalWidthCm", hue="Species")
@@ -93,7 +99,7 @@ petal.legend(loc=2) #Legend location assigned to top left corner
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Petal.png')   
-plt.show ()
+#plt.show ()
 
 #Pairplot
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm", "Species"]] #to remove Id column 
@@ -101,4 +107,4 @@ combination = sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") # ht
 
 #Save this plot as file
 plt.savefig('PNG/Pairplot_CombinationsSepalPetal.png')   
-plt.show ()
+#plt.show ()
