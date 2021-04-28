@@ -125,7 +125,7 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 ### Summary of Variables
 
 <div align="justify">
-As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the sample size available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. Below is a code extract. 
+As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the sample size available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. Below is a code extract. Once the file was created the next lines were added by using the access mode append which amends the already existing textfile summaryOfVariables.txt. 
 </div>
 
 ```python
@@ -153,7 +153,8 @@ The textfile includes a summary statistic of the numerical values of the dataset
 <div align="justify">
 Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spead out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species wiht this parameter. However, this might become clearer once the data has been visualised.  [19]
 
-The textfile also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] The correlation coefficient can range from +1 to -1 with +1 being a perfect positive or negative correlation. If the value equals 0 there is no relationship between the variables. For all values about
+The textfile also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] The correlation coefficient can range from +1 to -1 with +1 being a perfect positive or negative correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a fairly strong positve relationship. With a value around 0.6 the variables have a moderate positive relationship, this works also for negative values i.e. a value of -0.8 is considered to have a fairly strong negative relationship. If the value is positive the graph has a positive slope shape and vica versa. Again the collected information can be verified during the data visulisation. 
+See below results from syntaxt new_iris.corr().
 </div>
 
 ```text
@@ -164,8 +165,12 @@ SepalWidthCm       -0.109369      1.000000      -0.420516     -0.356544
 PetalLengthCm       0.871754     -0.420516       1.000000      0.962757
 PetalWidthCm        0.817954     -0.356544       0.962757      1.000000
 ```
+<div align="justify">
+new_iris was assigned to the dataset to remove the ID/index and the species column in the <i>iris.csv</i> file. This is an easy way to use only the variables that are required. 
 
-
+```python
+new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] 
+```
 
 [] 
 
@@ -330,7 +335,7 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 
 [14] [Correlation of Variables in Scatterplots](https://books.google.ie/books?id=ukOFDwAAQBAJ&pg=PA267&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwBHoECAQQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
 
-[15] [Correlation](https://www.jmp.com/en_ca/statistics-knowledge-portal/what-is-correlation.html#:~:text=Correlation%20is%20a%20statistical%20measure,statement%20about%20cause%20and%20effect.)
+[15] [Correlation](https://www.jmp.com/en_ca/statistics-knowledge-portal/what-is-correlation.html#:~:text=Correlation%20is%20a%20statistical%20measure,statement%20about%20cause%20and%20effect. https://www.statisticshowto.com/probability-and-statistics/correlation-analysis/)
 
 [16] [Data Visualisation](https://www.tableau.com/learn/articles/data-visualization)
 
