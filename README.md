@@ -70,7 +70,7 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 ### Python as Data Analytics tool 
 <div align="justify">
 Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as NumPy, Pandas, Matplotlib, seaborn and many more it is consitently used as a high level
-data analysation tool. It is an open source which is flexible and continuously improving 
+data analysation tool. It is an open source which is flexible and continuously improving. 
 </div>
 
 #### Libraries 
@@ -142,9 +142,14 @@ The textfile includes a summary statistic of the numerical values of the dataset
   - minimum value; maximum value
 
 <div align="justify">
-Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spead out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species wiht this parameter. However, this might become clearer once the data has been visualised.  [19]
+Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spread out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species. However, this might become clearer once the data has been visualised. </div> 
 
-The textfile also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] The correlation coefficient can range from +1 to -1 with +1 being a perfect positive or negative correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a fairly strong positve relationship. With a value around 0.6 the variables have a moderate positive relationship, this works also for negative values i.e. a value of -0.8 is considered to have a fairly strong negative relationship. If the value is positive the graph has a positive slope shape and vica versa. Again the collected information can be verified during the data visulisation. 
+[19]
+<div align="justify">
+The textfile also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. </div>
+
+[15]<div align="justify">
+ The correlation coefficient can range from +1 to -1 with +1 (-1) being a perfect positive (or negative) correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a fairly strong positve relationship. With a value around 0.6 the variables have a moderate positive relationship, this works also for negative values i.e. a value of -0.8 is considered to have a fairly strong negative relationship. If the value is positive the graph has a positive slope shape and vica versa. Again the collected information can be verified during the data visulisation. Nevertheless it is already clear that some variables have a strong relationship.
 See below results from syntaxt new_iris.corr().
 </div>
 
@@ -162,8 +167,6 @@ new_iris was assigned to the dataset to remove the ID/index and the species colu
 ```python
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] 
 ```
-
-[] 
 
 ### Data Visualisation 
 
