@@ -151,10 +151,21 @@ The textfile includes a summary statistic of the numerical values of the dataset
   - minimum value; maximum value
 
 <div align="justify">
-Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spead out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species wiht this parameter. However, this might become clearer once the data has been visualised.  [20]
+Count returns the amount of values counted in each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spead out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for petal length which indicates a high variation in data and could mean that this parameter might be usful to distinguish the three different species wiht this parameter. However, this might become clearer once the data has been visualised.  [19]
 
-The textfile also shows the correlation between varialbes. 
+The textfile also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] The correlation coefficient can range from +1 to -1 with +1 being a perfect positive or negative correlation. If the value equals 0 there is no relationship between the variables. For all values about
 </div>
+
+```text
+Summary of correlations between variables
+               SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
+SepalLengthCm       1.000000     -0.109369       0.871754      0.817954
+SepalWidthCm       -0.109369      1.000000      -0.420516     -0.356544
+PetalLengthCm       0.871754     -0.420516       1.000000      0.962757
+PetalWidthCm        0.817954     -0.356544       0.962757      1.000000
+```
+
+
 
 [] 
 
@@ -263,7 +274,7 @@ Scatterplots is used to show if the varialbes are in a linear relationship. Line
 <div align="justify">
 The scatterplot in this project, see above, show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris Setosa, Iris versicolar and Iris virginica. In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However if the petal leaf scatterplot on the right is taken into account even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
 In addition, for the Scatterplot Iris Petal it's data form a clear cloud of points for each species. As this cloud is elongated and resambles a line you can conclude that the varaibles are correlated. [14] 
-Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] 
+As above mentioned correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] 
 In this case for petal length grows the petal width grows too and this is visiable for all three species. Therefore, we can see a relationship between the variable petal length and petal width. In the case of sepal length vs spepal width this relationship is only visible for Iris setosa however not for Iris versicolor and Iris virginica. 
 Although the representation of points that group clouds for each Species (blue, orange and green dots) strongly suggest a possible separability of the groups. [14]
 
