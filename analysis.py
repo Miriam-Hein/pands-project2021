@@ -45,25 +45,25 @@ with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file
 sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalLength.png')   
-#plt.show ()
+plt.show ()
 
 # Histogram for SepalWidthCm
 sns.displot(iris, x="SepalWidthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
-#plt.show ()
+plt.show ()
 
 # Histogram for PetalLengthCm
 sns.displot(iris, x="PetalLengthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalLength.png')   
-#plt.show ()
+plt.show ()
 
 # Histogram for PetalWidthCm
 sns.displot(iris, x="PetalWidthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalWidth.png')   
-#plt.show ()
+plt.show ()
 
 # removing Id column
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] # Creating a new iris dataset with only the columes required for the plot
@@ -79,7 +79,7 @@ plt.tight_layout() # it automatically adjusts the subplots parameters so that al
 
 #Save this plot as file
 plt.savefig('PNG/Histogram_AllVariables.png')   
-#plt.show ()
+plt.show ()
 
 
 #plt.figure(figsize=[10,10]) # https://www.datacamp.com/community/tutorials/histograms-matplotlib
@@ -91,7 +91,7 @@ sepal.legend(loc=4) #Legend location assigned to bottom right corner inside plot
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Sepal.png')   
-#plt.show ()
+plt.show ()
 
 #Scatterplot of Petal Length and Petal Width features of the Fisher's Iris data
 petal = sns.scatterplot(data=iris, x="PetalLengthCm", y="PetalWidthCm", hue="Species")
@@ -99,7 +99,7 @@ petal.legend(loc=2) #Legend location assigned to top left corner
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Petal.png')   
-#plt.show ()
+plt.show ()
 
 #Pairplot
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm", "Species"]] #to remove Id column 
@@ -107,4 +107,4 @@ combination = sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") # ht
 
 #Save this plot as file
 plt.savefig('PNG/Pairplot_CombinationsSepalPetal.png')   
-#plt.show ()
+plt.show ()

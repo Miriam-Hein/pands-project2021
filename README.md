@@ -124,7 +124,9 @@ Once the data has been downloaded and reviewed for accurracy (rows 150 (data ent
 
 ### Summary of Variables
 
+<div align="justify">
 As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the sample size available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. As first Below is a code extract. 
+</div>
 
 ```python
 with open ('summaryOfVariables.txt', 'w') as file: 
@@ -158,8 +160,10 @@ The below Histograms have been created using the seaborn library with the x valu
 ```python
     sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") 
 ```
+<div align="justify">
 Each plot has been saved to the folder PNG on the repository using matplotlib. Seaborn as earlier describs translates the plot created into arguments that matplotlib understands. 
 Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. It was decided to show the plot when the program is running to view changes of the code while in progress, however this can be removed once the program is completed as all plots created are saved in the repository in the subfolder PNG. 
+</div> 
 
 ```python
   plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
