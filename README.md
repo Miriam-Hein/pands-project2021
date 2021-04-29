@@ -217,23 +217,27 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 **Summary of all variables for Sepal Length/Width & Petal Length/Width**
 
 <div align="justify">
-<ins>Histograms in Matplotlib:</ins> Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically, it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals. Those intervals are called bins and are specified as consecutive, non-overlapping intervals of a variable. In this example multiple plots were added to one figure using the library pandas and numPy instead of seaborn. The a.ravel() function returns the array into 1 dimension array 
-
+<ins>Histograms in Matplotlib:</ins> Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically, it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals. Those intervals are called bins and are specified as consecutive, non-overlapping intervals of a variable. In this example multiple plots were added to one figure using the library pandas and numPy instead of seaborn. 
+The a.ravel() function returns a 1-dimensional array, containing the elements of the input. It helps the for statement to count through all columns. The index is used to be able to go through each column/variable, while iloc is used to select the data by row numbers (from 1 to 150 entries) and then moves on to the next column to plot the frequency of each value of this particular variable. 
+To visualise all subplots the tight layout automatically adjusts the subplots parameters so that the plots fit nicely into the display area.
 </div>
+
+```python
+    fig,axes = plt.subplots(2,2)
+    a = a.ravel() 
+    for idx,axes in enumerate(a):
+        axes.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85) 
+        axes.set_ylabel('Count')
+        axes.set_xlabel(new_iris.columns[idx])
+    plt.tight_layout()
+``` 
+
+Output of Histograms of all varialbes not taking into acount species: 
 
 <p align="center">
 <img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted">
 </p>
 
-```python
-    f,a = plt.subplots(2,2)
-    a = a.ravel() 
-    for idx,ax in enumerate(a):
-        ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85) 
-        ax.set_ylabel('Count')
-        ax.set_xlabel(new_iris.columns[idx])
-    plt.tight_layout()
-``` 
 
 #### Scatterplots of pair of Variables 
 
