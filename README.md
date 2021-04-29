@@ -211,7 +211,7 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 <img src = "PNG/Histogram_Iris-SepalLength.png" alt = "Iris Sepal Length in cm">
 <img src = "PNG/Histogram_Iris-SepalWidth.png" alt = "Iris Sepal Width in cm">
 <img src = "PNG/Histogram_Iris-PetalWidth.png" alt = "Iris Petal Width in cm">
-<img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 600 height= 350>
+<img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm">
 </p>
 
 **Summary of all variables for Sepal Length/Width & Petal Length/Width**
