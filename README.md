@@ -141,6 +141,7 @@ with open ('summaryOfVariables.txt', 'a') as file:
 <div align="justify">
 The text file includes a summary statistic of the numerical values of the dataset and the number of samples per species, displaying the following parameters: 
 </div>
+
   - count
   - 25th, 50th and 75th percentiles (50% equivalents the median) [18]
   - mean
