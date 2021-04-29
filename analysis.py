@@ -42,25 +42,25 @@ with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file
 
 #Plotting histogram of each variable to png files
 # Histogram for SepalLengthCm
-sns.histplot(iris, x="SepalLengthCm", hue="Species", element="step", kde=bool) # https://seaborn.pydata.org/tutorial/distributions.html
+sns.histplot(iris, x="SepalLengthCm", hue="Species", element="step", kde=bool).set_title("Length of the sepal leaf in cm") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalLength.png')   
 plt.show ()
 
 # Histogram for SepalWidthCm
-sns.histplot(iris, x="SepalWidthCm", hue="Species", element="step", kde=bool) # element="step" is used to resolve overlapping intervals. (https://seaborn.pydata.org/generated/seaborn.histplot.html)
+sns.histplot(iris, x="SepalWidthCm", hue="Species", element="step", kde=bool).set_title("Width of the sepal leaf in cm") # element="step" is used to resolve overlapping intervals. (https://seaborn.pydata.org/generated/seaborn.histplot.html)
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
 plt.show ()
 
 # Histogram for PetalLengthCm
-sns.histplot(iris, x="PetalLengthCm", hue="Species", element="step", kde=bool) # https://seaborn.pydata.org/tutorial/distributions.html
+sns.histplot(iris, x="PetalLengthCm", hue="Species", element="step", kde=bool).set_title("Length of petal leaf in cm") # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalLength.png')   
 plt.show ()
 
 # Histogram for PetalWidthCm
-sns.histplot(iris, x="PetalWidthCm", hue="Species", element="step", kde=bool) # https://seaborn.pydata.org/tutorial/distributions.html
+sns.histplot(iris, x="PetalWidthCm", hue="Species", element="step", kde=bool).set_title("Width of petal leaf in cm") # https://seaborn.pydata.org/tutorial/distributions.html, https://stackoverflow.com/questions/42406233/how-to-add-title-to-seaborn-boxplot
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalWidth.png')   
 plt.show ()
@@ -88,6 +88,7 @@ plt.show ()
 #Scatterplot of Sepal Width and Sepal Length features of the Fisher's Iris data
 sepal = sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="Species") # https://seaborn.pydata.org/tutorial/relational.html
 sepal.legend(loc=4) #Legend location assigned to bottom right corner inside plot window #https://stackoverflow.com/questions/27019079/move-seaborn-plot-legend-to-a-different-position
+sepal.set_title("Length versus Width of the Sepal leaf in cm") 
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Sepal.png')   
@@ -96,6 +97,7 @@ plt.show ()
 #Scatterplot of Petal Length and Petal Width features of the Fisher's Iris data
 petal = sns.scatterplot(data=iris, x="PetalLengthCm", y="PetalWidthCm", hue="Species")
 petal.legend(loc=2) #Legend location assigned to top left corner
+petal.set_title("Length versus Width of the Petal leaf in cm")
 
 #Save this plot as file
 plt.savefig('PNG/Scatterplot_Iris-Petal.png')   
