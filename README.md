@@ -278,10 +278,10 @@ Scatterplots is used to show if the variables are in a linear relationship. Line
 
 <img src = "PNG/Scatterplot_Iris-Sepal.png" alt = "Scatterplot_Iris-Sepal" width = 400 height=400><img src = "PNG/Scatterplot_Iris-Petal.png" alt = "Scatterplot_Iris-Petal" width = 400 height=400>
 
-**Figure 8: Scatterplot of the iris data set for sepal length vs width (left) and for petal length vs width (right)**
+**Figure 3: Scatterplot of the iris data set for sepal length vs width (left) and for petal length vs width (right)**
 
 <div align="justify">
-The scatterplot in this project, see above, show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris Setosa, Iris versicolar and Iris virginica. In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However, if the petal leaf scatterplot on the right is considered even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
+The scatterplot in this project, see above, show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris s   etosa, Iris versicolar and Iris virginica. In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However, if the petal leaf scatterplot on the right is considered even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
 In addition, for the Scatterplot Iris Petal its data entries form a clear cloud of points for each species. As this cloud is elongated and resembles a line you can conclude that the variables are correlated. [14] <br>
 As above-mentioned correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] <br>
 In this case for petal length grows the petal width grows too and this is visible for all three species. Therefore, we can see a relationship between the variable petal length and petal width. In the case of sepal length vs spepal width this relationship is only visible for Iris setosa however not for Iris versicolor and Iris virginica. 
@@ -298,26 +298,21 @@ Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed cle
 
 ## References
 
-### References Summary of Fisher's Iris data set: 
 [1] [Iris flower](https://en.wikipedia.org/wiki/Iris_(plant)) 
 
 [2] [Background Fisher's Iris Dataset](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
 
 [3] [Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
-### References Python Analytic Tool
 [4] [Pandas](https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673)
 
 [5] [NumPy](https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db)
-
-[not used](https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.stack.imgur.com%2FNWTQH.png&imgrefurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F66434570%2Fnumpys-shape-function-returns-a-1d-value-for-a-2d-array&tbnid=3mLgD0we3AuveM&vet=12ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ..i&docid=ZjuYBSiXmg5NpM&w=1440&h=805&q=multi-dimensional%20arrays%20in%20numpy&ved=2ahUKEwiA7qXdr5vwAhVVVhUIHUNfABEQMygBegUIARC3AQ)
 
 [6] [Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html#:~:text=matplotlib.,the%20plot%20with%20labels%2C%20etc.)
 
 [7] [Seaborn cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)
     [Seaborn](https://seaborn.pydata.org/introduction.html)
 
-### References Analysis of the Fisher's Iris Dataset
 [7] [Dataset](https://archive.ics.uci.edu/ml/datasets/Iris)
 
 [8] [Hue](https://en.wikipedia.org/wiki/Hue)
@@ -326,11 +321,7 @@ Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed cle
 
 [10] [Linearity](https://books.google.ie/books?id=Y4rwCAAAQBAJ&pg=PA217&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwAXoECAMQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
 
-Books references: 
 [11] [Data analysis of Scatterplots](https://books.google.ie/books?id=EvGCsYeOFNwC&pg=PA46&dq=correct+analysis+iris+dataset+scatter+plot&hl=en&sa=X&ved=2ahUKEwjOyZ-ZrZTwAhWaRhUIHQ4_BFEQ6AEwAXoECAMQAg#v=onepage&q=correct%20analysis%20iris%20dataset%20scatter%20plot&f=false) 
-
-Guide to Intelligent Data Analysis: How to Intelligently Make Sense of Real Data, 
-By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Springer Verlag Page 45 to 47 
 
 [12] [Scatterplot vs Histogram](https://books.google.ie/books?id=kPOoCwAAQBAJ&pg=PA100&dq=histogram+of+variable+sepal+length+cm+python&hl=en&sa=X&ved=2ahUKEwjAnpSb15vwAhVFURUIHVPJDOEQ6AEwAnoECAUQAg#v=onepage&q=histogram%20of%20variable%20sepal%20length%20cm%20python&f=false)
 
@@ -421,5 +412,10 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
   - Formatting of Matplotlib graph
   - Readme update of sections Numpy,Matplotlib, Histogram of all varialbes
 
+29APR21:
+  - Formatting throughout the readme file
+  - proof reading
+  - explanation of the code added
+  - Conclusion completed
 
 </details>
