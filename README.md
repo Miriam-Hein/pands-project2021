@@ -30,7 +30,7 @@ It will include background information about the data set used and will explain 
 
 ## Background
 <div align="justify">
-The <b>Background</b> section is an introduction to this Project. It will give some background information about the data set used which then was visualised with Python as data analysis tool and third-party packages. 
+The section is an introduction to this Project. It will give some background information about the data set used which then was visualised with Python as data analysis tool and third-party packages. 
 This section will therefore also give a brief description of the libraries that were used throughout the code implementation and what are the requirements to run the code programmed in <i>analysis.py</i>. 
 </div>
 
@@ -100,7 +100,10 @@ This project uses the library to take data directly from the csv file uploaded. 
 
 #### Requirements to run Python code
 
-The code was written in Python using the Visual Studio Code Version 1.55.2. The program code of analysis.py should run without any issues if 
+<div align="justify">
+The code was written in Python 3.8.5 64-bit using the Visual Studio Code Version 1.55.2, with the downloaded extension Python v2021.4.765268190. The readme file was also completed in Visual Studio Code 1.55.2 while all other files, besides Figure 1 and 2, have been created by the code implemented in <i>analysis.py</i>. The Plots and text file are created/overwritten every time analysis.py is executed. However, the structure of the repository will need to be have the same setup. </n>
+The language mode Markdown was chosen, however to perform some additional format changes to the readme file some HTML code was used which was covered in the Web Application Development Module and was used as reference. As a requirement this project has been uploaded to GitHub to the repository pands-project2021 created and to be found using this url https://github.com/Miriam-Hein/pands-project2021. 
+</div>
 
 ## Implementation and Code explanation
 
