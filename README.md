@@ -242,7 +242,9 @@ Output of Histograms of all varialbes not taking into acount species:
 
 #### Scatterplots of pair of Variables 
 
+<div align="justify">
 A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting the samples in the dataset. The best way to display all relationships of the variables is by using a pairplot, see below for visulisation of the pairplot and code extract. The code extract is very similar to how scatterplots are programmed, the diag_kind="hist" changes the diagonal plot type to histogram which in this case fits the purpose of this project best.  
+</div>
 
 <p align="center">
 <img src="PNG/Pairplot_CombinationsSepalPetal.png" alt="Pairplot of Sepal vs Petal Width/Length in Cm">
@@ -262,7 +264,9 @@ sns.pairplot(data= new_iris, hue="Species", diag_kind="hist")
 <div align ="justify">
 Histograms are used to have a more detailed view of a variable and show the distribution of that variable. [13] The distribution shows the spread of the data, which can be either widely stretched or compressed. The shape of the distribution gives indications about the data displayed. There are different shapes which are defined by the number of peaks and by the possession of symmetry. 
 For all Histogram it can be noted that all three Species overlap throughout. 
+
 <br>
+
 The histogram of all variables shows each variable and its frequency not taking into consideration the different species. It is easy to notice that Sepal Length, Petal Length and Petal Width follow a unimodal distribution while Sepal Width reflects the Gaussian curve or normal distribution (bell shaped). 
 </div>
 
