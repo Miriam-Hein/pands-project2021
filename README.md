@@ -298,6 +298,9 @@ Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed cle
 
 ## References
 
+<details>
+<summary>"Click to expand"</summary>
+
 [1] [Iris flower](https://en.wikipedia.org/wiki/Iris_(plant)) 
 
 [2] [Background Fisher's Iris Dataset](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
@@ -367,6 +370,8 @@ Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed cle
 
 ### Other repositiories
 [GitHub repository](https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
+
+</details>
 
 ## Entries and Updates 
 
