@@ -205,25 +205,21 @@ In this project the general style for all graphs using the seaborn library was s
 ```python
 sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-serif', font_scale=1, color_codes=True, rc=None)
 ``` 
-Histograms of each varialbe are displayed below:
+**Histograms of each variable are displayed below, showing the kernel density estimate to smooth the distribution:**
 
-1. 
-  <p align="center">
+1.   <p align="center">
   <img src = "PNG/Histogram_Iris-SepalLength.png" alt = "Iris Sepal Length in cm" width = 600 height= 350>
   </p>
 
-2. 
-  <p align="center">
+2.   <p align="center">
   <img src = "PNG/Histogram_Iris-SepalWidth.png" alt = "Iris Sepal Width in cm" width = 600 height= 350>
   </p>
 
-3. 
-  <p align="center">
+3.   <p align="center">
   <img src = "PNG/Histogram_Iris-PetalWidth.png" alt = "Iris Petal Width in cm" width = 600 height= 350>
   </p>
 
-4. 
-  <p align="center">
+4.   <p align="center">
   <img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 600 height= 350>
   </p>
 
