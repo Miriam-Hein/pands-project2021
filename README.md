@@ -217,9 +217,9 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 **Summary of all variables for Sepal Length/Width & Petal Length/Width**
 
 <div align="justify">
-<ins>Histograms in Matplotlib:</ins> Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically, it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals. Those intervals are called bins and are specified as consecutive, non-overlapping intervals of a variable. In this example multiple plots were added to one figure using the library pandas instead of seaborn. 
-</div>
+<ins>Histograms in Matplotlib:</ins> Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically, it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals. Those intervals are called bins and are specified as consecutive, non-overlapping intervals of a variable. In this example multiple plots were added to one figure using the library pandas and numPy instead of seaborn. The a.ravel() function returns the array into 1 dimension array 
 
+</div>
 
 <p align="center">
 <img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted">
@@ -227,10 +227,9 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 
 ```python
     f,a = plt.subplots(2,2)
-    a = a.ravel()
+    a = a.ravel() 
     for idx,ax in enumerate(a):
         ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa',alpha=0.7, rwidth=0.85) 
-        ax.set_title(new_iris.columns[idx])
         ax.set_ylabel('Count')
         ax.set_xlabel(new_iris.columns[idx])
     plt.tight_layout()
@@ -256,6 +255,8 @@ A scatterplot is used to analyse relationships between variables. The dots in th
 Histograms are used to have a more detailed view of a variable and show the distribution of that variable. [13] The distribution shows the spread of the data, which can be either widely stretched or compressed. The shape of the distribution gives indications about the data displayed. There are different shapes which are defined by the number of peaks and by the possession of symmetry. 
 For all Histogram it can be noted that all three Species overlap throughout. 
 
+The histogram of all variables shows each variable and its frequency not taking into consideration the different species. It is easy to notice that Sepal Length, Petal Length and Petal Width follow a unimodal distribution while Sepal Width reflects the Gaussian curve or normal distribution (bell shaped). 
+
 #### Analysis of the Scatterplots
 <div align="justify">
 From histograms that focus on one single column/one variable of the data set, the scatterplot moves to the visualising of multiple columns and therefore multiple variables. [12] The 
@@ -278,6 +279,9 @@ Noticeable is that the left graph seems to show less data entries for Iris setos
 
 ## Conclusion
 
+<div align="justify">
+Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed clearly throughout the visualisation section of this report that the species Iris setosa is easily distinguishable from the other two species. However Iris virginica and Iris versicolor are almost not seperable without the species information given in the dataset. However, in this project only some statistical calculations were performed and the basic Histogram and Scatterplots visualised. As per Fisher's work the three species would be separable using further data analysis tools and is nowadays used as a perfect example in many test cases for statistical classification techniques in machine learning. [24] 
+</div>
 
 ## References
 
@@ -338,6 +342,8 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 [22] [histplot](https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=distplot)
 
 [23] [set theme seaborn](https://seaborn.pydata.org/generated/seaborn.set_theme.html)
+
+[24] [Conclusion](https://en.wikipedia.org/wiki/Iris_flower_data_setv)
 
 ### PNG references 
 [i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 

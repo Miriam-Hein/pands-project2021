@@ -68,11 +68,10 @@ plt.show ()
 # removing Id column
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] # Creating a new iris dataset with only the columes required for the plot
 # Histogram of all species for each variable using matplotlib.pyplot
-f,a = plt.subplots(2,2) # defines subplot display structure
-a = a.ravel() # a = array
-for idx,ax in enumerate(a):
+f,a = plt.subplots(2,2) # defines subplot display structure (2 rows, 2 columns)
+a = a.ravel() # Convert nd array to 1D array (https://www.geeksforgeeks.org/differences-flatten-ravel-numpy/)
+for idx,ax in enumerate(a): # couter of array
     ax.hist(new_iris.iloc[:,idx], bins='auto', color='#0504aa', alpha=0.7, rwidth=0.85, facecolor='C0', edgecolor='C0') # https://www.pythonprogramming.in/plot-histogram-with-specific-color-edge-color-and-line-width.html
-    ax.set_title(new_iris.columns[idx])
     ax.set_ylabel('Count') # https://stackoverflow.com/questions/53311685/difference-between-ax-set-xlabel-and-ax-xaxis-set-label-in-matplotlib-3-0-1
     ax.set_xlabel(new_iris.columns[idx])
 plt.tight_layout() # it automatically adjusts the subplots parameters so that all subplots fit into the figure area. http://omz-software.com/pythonista/matplotlib/users/tight_layout_guide.html#:~:text=tight_layout%20automatically%20adjusts%20subplot%20params,%2C%20axis%20labels%2C%20and%20titles.
