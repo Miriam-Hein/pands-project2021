@@ -141,11 +141,13 @@ with open ('summaryOfVariables.txt', 'a') as file:
 <div align="justify">
 The text file includes a summary statistic of the numerical values of the dataset and the number of samples per species, displaying the following parameters: 
 </div>
+
   - count
   - 25th, 50th and 75th percentiles (50% equivalents the median) [18]
   - mean
   - standard deviation
   - minimum value; maximum value
+  
 <div align="justify">
 Count returns the number of values/rows counted for each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spread out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for PetalLengthCm which indicates a high variation in data and could mean that this parameter might be useful to distinguish the three different species. However, this might become clearer once the data has been visualised.[19] <br>
 The text file also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] <br>
