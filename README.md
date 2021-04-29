@@ -69,7 +69,7 @@ The dataset contains values of 50 flowers of the three flower species *“Iris s
 
 ### Python as Data Analytics tool 
 <div align="justify">
-Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as the Libraries NumPy, Pandas, Matplotlib, seaborn and many more used for analysis and data manipulation it is consitentlyconsistently used as a high level data analysation tool. Also, when compared against other programming languages such as R or MATLAB for example it can be noted that Python provides a platform for the processing of data as well as features that are unique to Python.  It is an open source which is flexible and continuously improving due to constantly increasing number of support libraries, the implementation of algorithms of state-of-art methodologies, and the possibility to interface with other programming languages. As mentioned Python was not originally designed for data analysis therefore it can be used for other applications, such as generic programming, scripting, interfacing to databases, and web development which gives the additional advantage to develop data analysis projects that are compatible with the Web server for easy integration on the Web. 
+Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as the Libraries NumPy, Pandas, Matplotlib, seaborn and many more used for analysis and data manipulation it is consitentlyconsistently used as a high level data analysation tool. Also, when compared against other programming languages such as R or MATLAB for example it can be noted that Python provides a platform for the processing of data as well as features that are unique to Python.  It is an open source which is flexible and continuously improving due to constantly increasing number of support libraries, the implementation of algorithms of state-of-art methodologies, and the possibility to interface with other programming languages. As mentioned Python was not originally designed for data analysis therefore it can be used for other applications, such as generic programming, scripting, interfacing to databases, and web development which gives the additional advantage to develop data analysis projects that are compatible with the Web server for easy integration on the Web. <br>
 Last to be noted the programming language Python is considered to be a simple language with a high intuitiveness and the ease of reading the code makes it the perfect choice for this project. [21]
  
 </div>
@@ -101,7 +101,7 @@ This project uses the library to take data directly from the csv file uploaded. 
 #### Requirements to run Python code
 
 <div align="justify">
-The code was written in Python 3.8.5 64-bit using the Visual Studio Code Version 1.55.2, with the downloaded extension Python v2021.4.765268190. The readme file was also completed in Visual Studio Code 1.55.2 while all other files, besides Figure 1 and 2, have been created by the code implemented in <i>analysis.py</i>. The Plots and text file are created/overwritten every time analysis.py is executed. However, the structure of the repository will need to be have the same setup. </n>
+The code was written in Python 3.8.5 64-bit using the Visual Studio Code Version 1.55.2, with the downloaded extension Python v2021.4.765268190. The readme file was also completed in Visual Studio Code 1.55.2 while all other files, besides Figure 1 and 2, have been created by the code implemented in <i>analysis.py</i>. The Plots and text file are created/overwritten every time analysis.py is executed. However, the structure of the repository will need to be have the same setup. <br>
 The language mode Markdown was chosen, however to perform some additional format changes to the readme file some HTML code was used which was covered in the Web Application Development Module and was used as reference. As a requirement this project has been uploaded to GitHub to the repository pands-project2021 created and to be found using this url https://github.com/Miriam-Hein/pands-project2021. 
 </div>
 
@@ -141,7 +141,6 @@ with open ('summaryOfVariables.txt', 'a') as file:
 <div align="justify">
 The text file includes a summary statistic of the numerical values of the dataset and the number of samples per species, displaying the following parameters: 
 </div>
-
   - count
   - 25th, 50th and 75th percentiles (50% equivalents the median) [18]
   - mean
@@ -178,7 +177,7 @@ Data visualization is the graphic representation of information and data. By usi
 #### Histograms of Variables 
 
 <div align="justify">
-Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals or so called discrete bins. The y-axis of the graph usually represents the frequency or counts the number of occurrences in the dataset for consecutive intervals. Basically, a bar chart only that it focuses on one variable rather than comparing different variables. [17] </n>
+Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals or so called discrete bins. The y-axis of the graph usually represents the frequency or counts the number of occurrences in the dataset for consecutive intervals. Basically, a bar chart only that it focuses on one variable rather than comparing different variables. [17] <br>
 The below Histograms have been created using the seaborn library with the x value varying, see code extract for plots 1 - 4 below:
 </div>
 
@@ -285,11 +284,11 @@ Scatterplots is used to show if the variables are in a linear relationship. Line
 
 <div align="justify">
 The scatterplot in this project, see above, show the relationship between length vs width for each the sepal leaf and the petal leaf for the three different species Iris Setosa, Iris versicolar and Iris virginica. In both graphs it is clearly visible that Iris setosa (blue dots) is well distinguishable from the other two species. This is not the case for Iris versicolar and Iris virginica when only reviewing the sepal leaf scatterplot on the left. However, if the petal leaf scatterplot on the right is considered even though some data entries overlap it is still clearly visible that Iris virginica tents to larger values than Iris versicolor for the petal length and width. 
-In addition, for the Scatterplot Iris Petal its data entries form a clear cloud of points for each species. As this cloud is elongated and resembles a line you can conclude that the variables are correlated. [14] 
-As above-mentioned correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] 
+In addition, for the Scatterplot Iris Petal its data entries form a clear cloud of points for each species. As this cloud is elongated and resembles a line you can conclude that the variables are correlated. [14] <br>
+As above-mentioned correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] <br>
 In this case for petal length grows the petal width grows too and this is visible for all three species. Therefore, we can see a relationship between the variable petal length and petal width. In the case of sepal length vs spepal width this relationship is only visible for Iris setosa however not for Iris versicolor and Iris virginica. 
-Although the representation of points that group clouds for each Species (blue, orange and green dots) strongly suggest a possible separability of the groups. [14]
-
+Although the representation of points that group clouds for each Species (blue, orange and green dots) strongly suggest a possible separability of the groups. [14] <br>
+<br>
 Noticeable is that the left graph seems to show less data entries for Iris setosa compared to the right graph. Knowing that there are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. [11]
 </div>
 
