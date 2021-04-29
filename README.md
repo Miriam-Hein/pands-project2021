@@ -185,57 +185,53 @@ The below Histograms have been created using the seaborn library with the x valu
     sns.histplot(iris, x="SepalLengthCm", hue="Species", element="step") 
 ```
 
-<div align="justify">
-Each plot has been saved to the folder PNG on the repository using matplotlib. Seaborn as earlier describes translates the plot created into arguments that matplotlib understands. 
-Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. The plots are displayed every time the program is executed via the terminal using the command <i>python .\analysis.py</i>. 
-<i>iris</i> is the dataset used, while in the case of the code example the x-axis displays the values for SepalLenthCm. 
-The hue parameter determines which column of the dataset, in case of the project the categorical group species,  is used for colour coding (iris-setosa = blue, iris-versicolor = red, iris virginica = green). [21]
-The avoid not to be able to see each histogram of the three variables the element="step" parameter was assigned. This draws a step function and therefore overlapping graphs are visible. This parameter is only relevant if univariant data is used. 
-The function histplot() is used and  (https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=distplot)
 
-In this project the general style for all graphs using the seaborn library was set, see code below:
-</div> 
-
-```python
-sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-serif', font_scale=1, color_codes=True, rc=None)
-``` 
-
-
+Each plot has been saved to the folder PNG on the repository using matplotlib, see code extract below. 
 
 ```python
   plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
   plt.show ()
 ```
 
-1. Length of the sepal leaf in cm ("SepalLengthCm")
+<div align="justify">
+Seaborn as earlier describes translates the plot created into arguments that matplotlib understands. Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. The plots are displayed every time the program is executed via the terminal using the command <i>python .\analysis.py</i>. <br>
+The function histplot() is used to draw the graph as histogram. [22] <i>iris</i> is the dataset used, while in the case of the code example the x-axis displays the values for SepalLenthCm. 
+The hue parameter determines which column of the dataset, in case of the project the categorical group species,  is used for colour coding (iris-setosa = blue, iris-versicolor = red, iris virginica = green). [21] <br>
+To avoid not to be able to see each histogram of the three variables the parameter element="step" was assigned. This draws a step function and therefore overlapping graphs are visible. This parameter is only relevant if univariant data is used like in this case. 
+<br>
+In this project the general style for all graphs using the seaborn library was set [23], see code below:
+</div> 
 
-<p align="center">
-<img src = "PNG/Histogram_Iris-SepalLength.png" alt = "Iris Sepal Length in cm" width = 600 height= 350>
-</p>
+```python
+sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-serif', font_scale=1, color_codes=True, rc=None)
+``` 
+Histograms of each varialbe are displayed below:
 
-2. Width of sepal leaf in cm ("SepalWidthCm")
+1. 
+  <p align="center">
+  <img src = "PNG/Histogram_Iris-SepalLength.png" alt = "Iris Sepal Length in cm" width = 600 height= 350>
+  </p>
 
-<p align="center">
-<img src = "PNG/Histogram_Iris-SepalWidth.png" alt = "Iris Sepal Width in cm" width = 600 height= 350>
-</p>
+2. 
+  <p align="center">
+  <img src = "PNG/Histogram_Iris-SepalWidth.png" alt = "Iris Sepal Width in cm" width = 600 height= 350>
+  </p>
 
-3. Length of petal leaf in cm ("PetalWidthCm") 
-<p align="center">
-<img src = "PNG/Histogram_Iris-PetalWidth.png" alt = "Iris Petal Width in cm" width = 600 height= 350>
-</p>
+3. 
+  <p align="center">
+  <img src = "PNG/Histogram_Iris-PetalWidth.png" alt = "Iris Petal Width in cm" width = 600 height= 350>
+  </p>
 
-4. Width of petal leaf in cm ("PetalLengthCm")
-
-<p align="center">
-<img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 600 height= 350>
-</p>
-
+4. 
+  <p align="center">
+  <img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm" width = 600 height= 350>
+  </p>
 
 
 **Summary of all variables for Sepal Length/Width & Petal Length/Width**
 
 <div align="justify">
-<ins>Histograms in Matplotlib:</ins> Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically, it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals. Those intervals are called bins and are specified as consecutive, non-overlapping intervals of a variable. 
+<ins>Histograms in Matplotlib:</ins> Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Basically, it consists of multiple bar graph added into one graph. To construct a histogram, it is required to define so called <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals. Those intervals are called bins and are specified as consecutive, non-overlapping intervals of a variable. In this example multiple plots were added to one figure using the library pandas instead of seaborn. 
 </div>
 
 
@@ -352,6 +348,10 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 [20] [Python](https://books.google.ie/books?id=f1F1CgAAQBAJ&printsec=frontcover&dq=python+data+analysis&hl=en&sa=X&ved=2ahUKEwjou6yhx6PwAhVxo3EKHRt4AZQQ6AEwBHoECAQQAg#v=onepage&q=python%20data%20analysis&f=false)
 
 [21] [Hue](https://datascience.stackexchange.com/questions/46117/meaning-of-hue-in-seaborn-barplot#:~:text=In%20seaborn%2C%20the%20hue%20parameter,provided%20an%20example%20for%20this.&text=Adding%20%60hue%3D%22smoker%22,smoker%20and%20non%2Dsmoker%20differently.)
+
+[22] [histplot](https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=distplot)
+
+[23] [set theme seaborn](https://seaborn.pydata.org/generated/seaborn.set_theme.html)
 
 ### PNG references 
 [i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
