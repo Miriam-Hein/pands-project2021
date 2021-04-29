@@ -153,6 +153,7 @@ The text file also shows the correlation between variables. Correlation is used 
 The correlation coefficient can range from +1 to -1 with +1 (-1) being a perfect positive (or negative) correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a strong positive relationship. With a value around 0.6 the variables have a moderate positive relationship; this works also for negative values i.e. a value of -0.8 is considered to have a strong negative relationship. If the value is positive the graph has a positive slope shape and vice versa. Again, the collected information can be verified during the data visualisation. Nevertheless, it is already clear that some variables have a strong relationship. See below results from syntaxt new_iris.corr().
 </div>
 <br>
+
 ```text
 Summary of correlations between variables
                SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
