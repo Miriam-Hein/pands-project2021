@@ -119,7 +119,7 @@ Once the data has been downloaded and reviewed for accuracy (rows 150 (data entr
 ### Summary of Variables
 
 <div align="justify">
-As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the number of samples available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. Below is a code extract. Once the file was created the next lines were added by using the access mode append which amends the already existing textfile summaryOfVariables.txt. 
+As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the number of samples available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. Below is a code extract. Once the file was created the next lines were added by using the access mode append which amends the already existing text file <i>summaryOfVariables.txt</i>. 
 </div>
 
 ```python
@@ -187,8 +187,10 @@ The below Histograms have been created using the seaborn library with the x valu
 
 <div align="justify">
 Each plot has been saved to the folder PNG on the repository using matplotlib. Seaborn as earlier describes translates the plot created into arguments that matplotlib understands. 
-Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. The plot are displayed every time the program is executed via the terminal using the command <i>python .\analysis.py</i>. 
-iris is the dataset used, while in the case of the code example about the x-axis displays the values for SepalLenthCm. The hue parameter groups variables in this case the categorical group Species which will produce points with different colours (iris-setosa = blue, iris-versicolor = red, iris virginica = green). The element
+Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. The plots are displayed every time the program is executed via the terminal using the command <i>python .\analysis.py</i>. 
+<i>iris</i> is the dataset used, while in the case of the code example the x-axis displays the values for SepalLenthCm. 
+The hue parameter determines which column of the dataset, in case of the project the categorical group species,  is used for colour coding (iris-setosa = blue, iris-versicolor = red, iris virginica = green). [21]
+The avoid not to be able to see each histogram of the three variables the element="step" parameter was assigned. This draws a step function and therefore overlapping graphs are visible. 
 The function displot() is used and  (https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=distplot)
 
 In this project the general style for all graphs using the seaborn library was set, see code below:
@@ -348,6 +350,8 @@ By Michael R. Berthold, Christian Borgelt, Frank Höppner, Frank Klawonn, Spring
 [19] [Standard deviation](https://www.dummies.com/education/math/statistics/how-to-interpret-standard-deviation-in-a-statistical-data-set/)
 
 [20] [Python](https://books.google.ie/books?id=f1F1CgAAQBAJ&printsec=frontcover&dq=python+data+analysis&hl=en&sa=X&ved=2ahUKEwjou6yhx6PwAhVxo3EKHRt4AZQQ6AEwBHoECAQQAg#v=onepage&q=python%20data%20analysis&f=false)
+
+[21] [Hue](https://datascience.stackexchange.com/questions/46117/meaning-of-hue-in-seaborn-barplot#:~:text=In%20seaborn%2C%20the%20hue%20parameter,provided%20an%20example%20for%20this.&text=Adding%20%60hue%3D%22smoker%22,smoker%20and%20non%2Dsmoker%20differently.)
 
 ### PNG references 
 [i] [Iris flower](https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5) 
