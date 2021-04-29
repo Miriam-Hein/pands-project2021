@@ -254,10 +254,12 @@ combination = sns.pairplot(data= new_iris, hue="Species", diag_kind="hist")
 
 #### Analysis of the Histograms
 
+<div align ="justify">
 Histograms are used to have a more detailed view of a variable and show the distribution of that variable. [13] The distribution shows the spread of the data, which can be either widely stretched or compressed. The shape of the distribution gives indications about the data displayed. There are different shapes which are defined by the number of peaks and by the possession of symmetry. 
 For all Histogram it can be noted that all three Species overlap throughout. 
-
+<br>
 The histogram of all variables shows each variable and its frequency not taking into consideration the different species. It is easy to notice that Sepal Length, Petal Length and Petal Width follow a unimodal distribution while Sepal Width reflects the Gaussian curve or normal distribution (bell shaped). 
+</div>
 
 #### Analysis of the Scatterplots
 <div align="justify">
