@@ -24,7 +24,6 @@ It will include background information about the data set used and will explain 
     - [Analysis of the Fisher's Iris Data set using plot figures](#analysis-of-the-fishers-iris-data-set-using-plot-figures)
       - [Analysis of the Histograms](#analysis-of-the-histograms)
       - [Analysis of the Scatterplots](#analysis-of-the-scatterplots)
-    - [Pythons role](#pythons-role)
   - [Conclusion](#conclusion)
   - [References](#references)
 
@@ -153,8 +152,7 @@ Count returns the number of values/rows counted for each column and can help to 
 The text file also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] <br>
 The correlation coefficient can range from +1 to -1 with +1 (-1) being a perfect positive (or negative) correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a strong positive relationship. With a value around 0.6 the variables have a moderate positive relationship; this works also for negative values i.e. a value of -0.8 is considered to have a strong negative relationship. If the value is positive the graph has a positive slope shape and vice versa. Again, the collected information can be verified during the data visualisation. Nevertheless, it is already clear that some variables have a strong relationship. See below results from syntaxt new_iris.corr().
 </div>
-
-
+<br>
 ```text
 Summary of correlations between variables
                SepalLengthCm  SepalWidthCm  PetalLengthCm  PetalWidthCm
@@ -293,10 +291,6 @@ Although the representation of points that group clouds for each Species (blue, 
 <br>
 Noticeable is that the left graph seems to show less data entries for Iris setosa compared to the right graph. Knowing that there are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. [11]
 </div>
-
-### Pythons role
-
-Advantages of python versus other data analysis programs/tools such as Matlab, SPSS, Minitab, 
 
 ## Conclusion
 
