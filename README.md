@@ -242,14 +242,14 @@ Output of Histograms of all varialbes not taking into acount species:
 
 #### Scatterplots of pair of Variables 
 
-A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting the samples in the dataset. The best way to display all relationships of the variables is by using a pairplot, see below. 
+A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting the samples in the dataset. The best way to display all relationships of the variables is by using a pairplot, see below for visulisation of the pairplot and code extract. The code extract is very similar to how scatterplots are programmed, the diag_kind="hist" changes the diagonal plot type to histogram which in this case fits the purpose of this project best.  
 
 <p align="center">
 <img src="PNG/Pairplot_CombinationsSepalPetal.png" alt="Pairplot of Sepal vs Petal Width/Length in Cm">
 </p>
 
 ```python
-combination = sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") 
+sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") 
 ```
 
 ## Data Analysis
