@@ -237,13 +237,15 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 
 #### Scatterplots of pair of Variables 
 
-A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting 
-
-#### Pairplot
+A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting the samples in the dataset. The best way to display all relationships of the variables is by using a pairplot, see below. 
 
 <p align="center">
 <img src="PNG/Pairplot_CombinationsSepalPetal.png" alt="Pairplot of Sepal vs Petal Width/Length in Cm">
 </p>
+
+```python
+combination = sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") 
+```
 
 ## Data Analysis
 

@@ -104,7 +104,7 @@ plt.show ()
 
 #Pairplot
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm", "Species"]] #to remove Id column 
-combination = sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") # https://seaborn.pydata.org/generated/seaborn.pairplot.html
+sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") # https://seaborn.pydata.org/generated/seaborn.pairplot.html
 
 #Save this plot as file
 plt.savefig('PNG/Pairplot_CombinationsSepalPetal.png')   
