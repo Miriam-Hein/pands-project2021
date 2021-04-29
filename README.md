@@ -182,7 +182,7 @@ The below Histograms have been created using the seaborn library with the x valu
 </div>
 
 ```python
-    sns.displot(iris, x="SepalLengthCm", hue="Species", element="step") 
+    sns.histplot(iris, x="SepalLengthCm", hue="Species", element="step") 
 ```
 
 <div align="justify">
@@ -190,8 +190,8 @@ Each plot has been saved to the folder PNG on the repository using matplotlib. S
 Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. The plots are displayed every time the program is executed via the terminal using the command <i>python .\analysis.py</i>. 
 <i>iris</i> is the dataset used, while in the case of the code example the x-axis displays the values for SepalLenthCm. 
 The hue parameter determines which column of the dataset, in case of the project the categorical group species,  is used for colour coding (iris-setosa = blue, iris-versicolor = red, iris virginica = green). [21]
-The avoid not to be able to see each histogram of the three variables the element="step" parameter was assigned. This draws a step function and therefore overlapping graphs are visible. 
-The function displot() is used and  (https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=distplot)
+The avoid not to be able to see each histogram of the three variables the element="step" parameter was assigned. This draws a step function and therefore overlapping graphs are visible. This parameter is only relevant if univariant data is used. 
+The function histplot() is used and  (https://seaborn.pydata.org/generated/seaborn.distplot.html?highlight=distplot)
 
 In this project the general style for all graphs using the seaborn library was set, see code below:
 </div> 

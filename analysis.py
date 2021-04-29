@@ -42,25 +42,25 @@ with open ('summaryOfVariables.txt', 'a') as file: # Append mode: 'a' opens file
 
 #Plotting histogram of each variable to png files
 # Histogram for SepalLengthCm
-sns.histplot(iris, x="SepalLengthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
+sns.histplot(iris, x="SepalLengthCm", hue="Species", element="step", kde=bool) # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalLength.png')   
 plt.show ()
 
 # Histogram for SepalWidthCm
-sns.histplot(iris, x="SepalWidthCm", hue="Species", element="step") # element="step" is used to resolve overlapping intervals. (https://seaborn.pydata.org/generated/seaborn.histplot.html)
+sns.histplot(iris, x="SepalWidthCm", hue="Species", element="step", kde=bool) # element="step" is used to resolve overlapping intervals. (https://seaborn.pydata.org/generated/seaborn.histplot.html)
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-SepalWidth.png')   
 plt.show ()
 
 # Histogram for PetalLengthCm
-sns.histplot(iris, x="PetalLengthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
+sns.histplot(iris, x="PetalLengthCm", hue="Species", element="step", kde=bool) # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalLength.png')   
 plt.show ()
 
 # Histogram for PetalWidthCm
-sns.histplot(iris, x="PetalWidthCm", hue="Species", element="step") # https://seaborn.pydata.org/tutorial/distributions.html
+sns.histplot(iris, x="PetalWidthCm", hue="Species", element="step", kde=bool) # https://seaborn.pydata.org/tutorial/distributions.html
 #Save this plot as file
 plt.savefig('PNG/Histogram_Iris-PetalWidth.png')   
 plt.show ()
