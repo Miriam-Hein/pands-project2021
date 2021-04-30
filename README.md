@@ -21,59 +21,62 @@ It will include background information about the data set used and will explain 
       - [Scatterplots of pair of Variables](#scatterplots-of-pair-of-variables)
       - [Pairplot](#pairplot)
   - [Data Analysis](#data-analysis)
-    - [Analysis of the Fisher's Iris Data set using plot figures](#analysis-of-the-fishers-iris-data-set-using-plot-figures)
+    - [Analysis of the Fisher's Iris Data set using plots](#analysis-of-the-fishers-iris-data-set-using-plot-figures)
       - [Analysis of the Histograms](#analysis-of-the-histograms)
       - [Analysis of the Scatterplots](#analysis-of-the-scatterplots)
   - [Conclusion](#conclusion)
   - [References](#references)
 
-## Background
+## **Background**
 <div align="justify">
-The section is an introduction to this Project. It will give some background information about the data set used which then was visualised with Python as data analysis tool and third-party packages. 
-This section will therefore also give a brief description of the libraries that were used throughout the code implementation and what are the requirements to run the code programmed in <i>analysis.py</i>. 
+This section is an introduction to this project. It will give some background information about the data set used which then was visualised with Python as data analysis tool using additional third-party packages. 
+This section will therefore also give a brief description of the libraries used throughout the code implementation and what the requirements are to run the code written in <i>analysis.py</i> and pushed to the github repositiory pands-project2021. 
 </div>
+<br>
 
-### Summary of the Fisher's Iris data set
+### **Summary of the Fisher's Iris data set**
 <div align="justify">
 The <i>iris</i> is a genus of plants with around 260-300 different species with either yellow, blue or multi-coloured petals, which is why this plant was named after the Greek goddess of the rainbow (iris). [1] 
-
 </div>
+<br>
 <p align="center">
 <img src = "PNG/Fig1_IrisSpecies.png" alt = "Iris Species" >
 </p>
 <div align="center">
 
-**Figure 1: Petals & Sepals for Iris setosa, Iris versicolor, and Iris virginica [i]**
+**Figure 1: Petal & Sepal Leaf of Iris setosa, Iris versicolor, and Iris virginica [i]**
 </div>
 
 Why this flower is described here is as follows:
 
 <div align="justify">
-Sir Ronald Aylmer Fisher was a British statistician and geneticist who published <i>“The Use of Multiple Measurements in Taxonomic Problems”</i> in the journal <i>“Annals of Eugenics”</i> in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the <i>Fisher’s Iris dataset</i>. This dataset is also called <i>Anderson’s Iris dataset</i> because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2][3] All quantities are measured in the unit centimetres (cm).
+Sir Ronald Aylmer Fisher was a British statistician and geneticist who published <i>“The Use of Multiple Measurements in Taxonomic Problems”</i> in the journal <i>“Annals of Eugenics”</i> in 1936. In his work, Fisher developed and evaluated a linear function for distinguishing iris species based on the morphology of their flowers, using the <i>Fisher’s Iris dataset</i>. This dataset is also called <i>Anderson’s Iris dataset</i> because Edgar Anderson’s collected the data mainly in Canada to quantify the morphological variation of iris flowers of three related species. [2][3] All quantities were measured in the unit centimetres (cm).
 
-The dataset contains values of 50 flowers of the three flower species *“Iris setosa”*, *“Iris versicolor”* and *“Iris virginica”*. For each flower, the following information was collected:
+The dataset contains values of 50 flowers of the three flower species *“Iris setosa”*, *“Iris versicolor”* and *“Iris virginica”*. For each flower, the following information were collected:</div>
+
    - the length of the sepal leaf in cm ("SepalLengthCm");
    - the width of the sepal leaf in cm (“SepalWidthCm”);
    - the length of the petal in cm (“PetalLengthCm”);
    - the width of the petal in cm (“PetalwidthCm”); 
    - the species of flower ("Species"). [2]
-</div>
+
 <p align="center">
 <img src = "PNG/Fig2_IrisDataset.png" alt = "Original Iris Data Set extract">
 </p>
 <div align="center">
 
-**Figure 2: Morphological Measures of Iris Flowers [ii]**
-</div>
+**Figure 2: Morphological Measures of Iris Flowers from the original Fisher's Iris dataset [ii]**</div>
 
-### Python as Data Analytics tool 
+<br>
+
+### **Python as Data Analytics tool** 
+
 <div align="justify">
-Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as the Libraries NumPy, Pandas, Matplotlib, seaborn and many more used for analysis and data manipulation it is consitentlyconsistently used as a high level data analysation tool. Also, when compared against other programming languages such as R or MATLAB for example it can be noted that Python provides a platform for the processing of data as well as features that are unique to Python.  It is an open source which is flexible and continuously improving due to constantly increasing number of support libraries, the implementation of algorithms of state-of-art methodologies, and the possibility to interface with other programming languages. As mentioned Python was not originally designed for data analysis therefore it can be used for other applications, such as generic programming, scripting, interfacing to databases, and web development which gives the additional advantage to develop data analysis projects that are compatible with the Web server for easy integration on the Web. <br>
-Last to be noted the programming language Python is considered to be a simple language with a high intuitiveness and the ease of reading the code makes it the perfect choice for this project. [21]
- 
-</div>
+Python is a programming language created for scientific computing tasks, which includes the analysis and visualisation of datasets. Originally the programming language was not designed for this tasks but due to the large active ecosystem of third party packages such as the libraries <i>NumPy, Pandas, Matplotlib, seaborn</i> and many more used for analysis and data manipulation it is consistently used as a high level data analysation tool. Also, when compared against other programming languages such as R or MATLAB for example it can be noted that Python provides a platform for the processing of data as well as features that are unique to Python.  It is an open source which is flexible and continuously improving due to constantly increasing number of support libraries, the implementation of algorithms of state-of-art methodologies, and the possibility to interface with other programming languages. As mentioned Python was not originally designed for data analysis therefore it can be used for other applications, such as generic programming, scripting, interfacing to databases, and web development which gives the additional advantage to develop data analysis projects that are compatible with the Web server for easy integration on the Web. <br>
+Last to be noted the programming language Python is considered to be a simple language with a high intuitiveness and the ease of reading the code makes it the perfect choice for this project. [21]</div>
+<br>
 
-#### Libraries 
+#### **Libraries** 
 
 The following libraries were imported in this project:    
 
@@ -86,10 +89,9 @@ The following libraries were imported in this project:
 <div align="justify">
 
 ***pandas*** stands for "Python Data Analysis" and was created as an open source by Wes McKinney.
-This project uses the library to take data directly from the csv file uploaded. This library creates a Python object with rows and columns called dataframe (often referred to in code as df) which allows to work with a "table like" structure rather having to work with lists and/or directories using for loops/list comprehension. A "nickname"/ short for pandas has been created for better usability to access Pandas with "pd.command" instead of having to use "pandas.command". NumPy is usually used in combination with pandas. 
-[4]
+This project uses the library to take data directly from the csv file uploaded. This library creates a Python object with rows and columns called dataframe (often referred to in code as df) which allows to work with a "table like" structure rather having to work with lists and/or directories using for loops/list comprehension. A "nickname" for pandas has been created for better usability to access Pandas with "pd.command" instead of having to use "pandas.command". This has also been done for all following libraries. NumPy is usually used in combination with pandas. [4]
 
-***numPy*** stands for "Numerical Python" and is the library that pandas, matplotlib and Scikit-learn are built on. It is not as default installed and therefore has to be added. This has been done at the start of this module via Anaconda. It is used for the manipulation of Python objects also called multi-dimensional array-based data and is the main package for scientific computing with Python. The arrays include collected values. 
+***numPy*** stands for "Numerical Python" and is the library that pandas, matplotlib and Scikit-learn are built on. It is not as default installed and therefore has to be added for example via Anaconda. It is used for the manipulation of Python objects also called multi-dimensional array-based data and is the main package for scientific computing with Python. The arrays include collected values. 
 [5]
 
 ***matplotlib*** is a library used to mimic the functions of MATLAB, which is a programming and numeric computing platform to analyse data, develop algorithms and to create models for example with the build in package Simulink. Each pyplot function does a change to a figure, for example it creates a figure, decorates plots with labels and titles and saves the figure (all examples used in this project). 
@@ -97,29 +99,32 @@ This project uses the library to take data directly from the csv file uploaded. 
 ***seaborn*** is a data visualisation library based on matplotlib making statistical graphs in Python. Seaborn can operate either on dataframes or array containing whole datasets, which is the case for this project (refer to Dataset import). It performs the initial semantic mapping this means the focus is in the different elements of your plot and therefore it is more data-oriented rather than matplotlib where you detail on how the graph is drawn. In the code seaborn requires only the names of the variable and their roles specified. It is not necessary to specify any attributes like colour values or marker code.  Behind the scenes, Seaborn translates into arguments matplotlib understands. [7]
 </div>
 
-#### Requirements to run Python code
+#### **Requirements to run Python code**
 
 <div align="justify">
-The code was written in Python 3.8.5 64-bit using the Visual Studio Code Version 1.55.2, with the downloaded extension Python v2021.4.765268190. The readme file was also completed in Visual Studio Code 1.55.2 while all other files, besides Figure 1 and 2, have been created by the code implemented in <i>analysis.py</i>. The Plots and text file are created/overwritten every time analysis.py is executed. However, the structure of the repository will need to be have the same setup. <br>
+The code was written in Python 3.8.5 64-bit using the Visual Studio Code Version 1.55.2, with the downloaded extension Python v2021.4.765268190. The readme file was also completed in Visual Studio Code 1.55.2 while all other files, besides Figure 1 and 2, have been created by the code implemented in <i>analysis.py</i>. The Plots and text file are created/overwritten every time analysis.py is executed. However, the structure of the repository will need to have the same setup to run. <br>
 The language mode Markdown was chosen, however to perform some additional format changes to the readme file some HTML code was used which was covered in the Web Application Development Module and was used as reference. As a requirement this project has been uploaded to GitHub to the repository pands-project2021 created and to be found using this url https://github.com/Miriam-Hein/pands-project2021. 
-</div>
+</div><br>
 
-## Implementation and Code explanation
+## **Implementation and Code explanation**
+<div align="justify">
+This section tries to explain how <i>analysis.py</i> was structured and build to meet the problem statement of the project. 
+</div><br>
 
-### Dataset import
+### **Dataset import**
 
 <div align="justify">
-Once the data has been downloaded and reviewed for accuracy (rows 150 (data entries), columns 6 (Id, 4 variables, Species)) it was uploaded to the repository in the folder data as csv file called <i>iris.csv</i>. The library pandas allows to read the file in csv format. For usability the dataset was read into a dataframe called <i>iris</i>, which is used in any further code. See below code extract used in <i>analysis.py</i>. The function read_csv converts the text-based data into a DataFrame. 
+Once the data has been downloaded and reviewed for accuracy (rows 150 (data entries), columns 6 (Id, 4 variables, species)) it was uploaded to the repository in the folder data as csv file called <i>iris.csv</i>. The library <i>pandas</i> allows to read the file in csv format. For usability the dataset was read into a dataframe called <i>iris</i>, which is used in any further code, see below code extracted from <i>analysis.py</i>. The function read_csv converts the text-based data into a DataFrame. 
 </div>
 
 ```python
     iris = pd.read_csv('data/iris.csv') 
 ```
 
-### Summary of Variables
+### **Summary of Variables**
 
 <div align="justify">
-As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file holds a summary of each variable (SepalWidth, SepalLength, PetalWidth, PetalLength) and the number of samples available for each species. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. Below is a code extract. Once the file was created the next lines were added by using the access mode append which amends the already existing text file <i>summaryOfVariables.txt</i>. 
+As part of this project a text file <i>summaryOfVariables.txt</i> has been created. The file contains a summary of each variable (SepalWidthCm, SepalLengthCm, PetalWidthCm, PetalLengthCm) and the number of samples available for each species as well as the correlation value for pair of variables. The text file was created using the module open(filename, access_mode) with the access mode write 'w'. Below is a code extract. Once the file was created the next lines were added by using the access mode append which amends the already existing text file <i>summaryOfVariables.txt</i>. 
 </div>
 
 ```python
@@ -145,14 +150,13 @@ The text file includes a summary statistic of the numerical values of the datase
   - 25th, 50th and 75th percentiles (50% equivalents the median) [18]
   - mean
   - standard deviation
-  - minimum value; maximum value
+  - minimum & maximum value
   
 <div align="justify">
-Count returns the number of values/rows counted for each column and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spread out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables sepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for PetalLengthCm which indicates a high variation in data and could mean that this parameter might be useful to distinguish the three different species. However, this might become clearer once the data has been visualised.[19] <br>
+Count returns the number of values/rows counted for each column (excluding the header row) and can help to show that all columns include the same amount of data entries. The percentiles parameter shows that e.g. the 25th percentile is the score below which 25% of the values in the distribution fall. The mean parameter returns the average of the values. This parameter is useful when looking at the standard deviation. The standard deviation tells you how spread out the data is and is a measure of how far each observed value is from the mean. Looking at the standard deviations for the variables SepalLengthCm, SepalWidthCm & PetalWidthCm the values are all below 1; considered to be low meaning that the values are more concentrated around the mean, on average. It can be observed that a larger standard deviation (1.764420) is given for PetalLengthCm which indicates a high variation in data and could mean that this parameter might be useful to distinguish the three different species. However, this might become clearer once the data has been visualised. [19] <br>
 The text file also shows the correlation between variables. Correlation is used as a statistical measure to express the linearity of two variables. This means that both variables would change together at a certain range. [15] <br>
-The correlation coefficient can range from +1 to -1 with +1 (-1) being a perfect positive (or negative) correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a strong positive relationship. With a value around 0.6 the variables have a moderate positive relationship; this works also for negative values i.e. a value of -0.8 is considered to have a strong negative relationship. If the value is positive the graph has a positive slope shape and vice versa. Again, the collected information can be verified during the data visualisation. Nevertheless, it is already clear that some variables have a strong relationship. See below results from syntaxt new_iris.corr().
+The correlation coefficient can range from +1 to -1 with +1 (-1) being a perfect positive (or negative) correlation. If the value equals 0 there is no relationship between the variables. For all values above +0.8 it is considered that these variables have a strong positive relationship. With a value around 0.6 the variables have a moderate positive relationship; this works also for negative values i.e. a value of -0.8 is considered to have a strong negative relationship. If the value is positive the graph has a positive slope shape and vice versa. Again, the collected information can be verified during the data visualisation, especially comparing the the pairplot created. The values correspond to the same format as each plot in the pairplot. Only in combination of the cacluated values and the plots you can draw conclusions. Standing alone it might mislead to incorrect assumptions. Nevertheless, it is already clear that some variables most likely have a strong relationship. See below results from syntaxt new_iris.corr().
 </div>
-<br>
 
 ```text
 Summary of correlations between variables
@@ -163,19 +167,19 @@ PetalLengthCm       0.871754     -0.420516       1.000000      0.962757
 PetalWidthCm        0.817954     -0.356544       0.962757      1.000000
 ```
 
-new_iris was assigned to the dataset to remove the ID/index and the species column in the <i>iris.csv</i> file. This is an easy way to use only the variables that are required. 
+<i>new_iris</i> was assigned to the dataset to remove the ID/index and the species column in the <i>iris.csv</i> file. This is an easy way to use only the variables that are required.
 
 ```python
 new_iris = iris[["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"]] 
 ```
 
-### Data Visualisation 
+### **Data Visualisation** 
 
 <div align="justify">
-Data visualization is the graphic representation of information and data. By using visual elements such as charts, graphs, and maps, the data displayed can provide valuable information to help you see and understand trends, outliers, and specific patterns in the data. The data can then be used to make decisions, such as making future predictions, or to check the effectiveness of a process. The human eye cannot easily interpret data from a table or in this project from a CSV (comma separated values) file; this would require i.e. calculations. The presentation of the data therefore plays a major role, since people can process visual impressions very easily and can usually even interpret them without prior knowledge. A colour change from red to blue can be used or a difference in shape such as a circle compared to a triangle can be easily recognized and help with the interpretation. Therefore, in the following chapter, the Fisher’s Iris data set was visualised, and histograms and scatter diagrams were designed for this purpose. [16] 
-</div>
+Data visualization is the graphic representation of information and data. By using visual elements such as charts, graphs, and maps, the data displayed can provide valuable information to help you see and understand trends, outliers, and specific patterns in the data. The data can then be used to make decisions, such as making future predictions, or to check the effectiveness of a process. The human eye cannot easily interpret data from a table or in this project from a CSV (comma separated values) file; this would require i.e. calculations etc. The presentation of the data therefore plays a major role, since people can process visual impressions very easily and can usually even interpret them without prior knowledge. A colour change from red to blue can be used or a difference in shape such as a circle compared to a triangle can be easily recognized and help with the interpretation. Therefore, in the following chapter, the Fisher’s Iris data set was visualised, and histograms and scatter diagrams were designed for this purpose. [16] 
+</div><br>
 
-#### Histograms of Variables 
+#### **Histograms of Variables** 
 
 <div align="justify">
 Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals or so called discrete bins. The y-axis of the graph usually represents the frequency or counts the number of occurrences in the dataset for consecutive intervals. Basically, a bar chart only that it focuses on one variable rather than comparing different variables. [17] <br>
@@ -256,7 +260,7 @@ sns.pairplot(data= new_iris, hue="Species", diag_kind="hist")
 
 ## Data Analysis
 
-### Analysis of the Fisher's Iris Data set using plot figures
+### Analysis of the Fisher's Iris Data set using plots
 
 
 #### Analysis of the Histograms
