@@ -20,8 +20,7 @@ It will include background information about the data set used and will explain 
       - [Histograms of Variables](#histograms-of-variables)
       - [Scatterplots of pair of Variables](#scatterplots-of-pair-of-variables)
       - [Pairplot](#pairplot)
-  - [Data Analysis](#data-analysis)
-    - [Analysis of the Fisher's Iris Data set using plots](#analysis-of-the-fishers-iris-data-set-using-plot-figures)
+  - [Data Analysis of the Fisher's Iris Data set using plots](#Data-Analysis-of-the-fishers-iris-data-set-using-plot-figures)
       - [Analysis of the Histograms](#analysis-of-the-histograms)
       - [Analysis of the Scatterplots](#analysis-of-the-scatterplots)
   - [Conclusion](#conclusion)
@@ -182,14 +181,13 @@ Data visualization is the graphic representation of information and data. By usi
 #### **Histograms of Variables** 
 
 <div align="justify">
-Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals or so called discrete bins. The y-axis of the graph usually represents the frequency or counts the number of occurrences in the dataset for consecutive intervals. Basically, a bar chart only that it focuses on one variable rather than comparing different variables. [17] <br>
-The below Histograms have been created using the seaborn library with the x value varying, see code extract for plots 1 - 4 below:
+Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. Histograms are focused on one variable at a time and shows the distribution of this variable. The values in a Histogram are usually split into intervals or so called discrete bins. The y-axis of the graph usually represents the frequency or counts the number of occurrences in the dataset for consecutive intervals. Basically, a bar chart only that it focuses on one variable rather than comparing different variables. [17] <br>
+The below Histograms have been created using the seaborn library with the x value (4 variables) varying, see code extract for plots 1 - 4 below:
 </div>
 
 ```python
     sns.histplot(iris, x="SepalLengthCm", hue="Species", element="step") 
 ```
-
 
 Each plot has been saved to the folder PNG on the repository using matplotlib, see code extract below. 
 
@@ -199,7 +197,7 @@ Each plot has been saved to the folder PNG on the repository using matplotlib, s
 ```
 
 <div align="justify">
-Seaborn as earlier describes translates the plot created into arguments that matplotlib understands. Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. The plots are displayed every time the program is executed via the terminal using the command <i>python .\analysis.py</i>. <br>
+Seaborn as earlier described translates the plot created into arguments that matplotlib understands. Every time the program runs the plots are shown one after another. The program completes each line from top to bottom, but each plot opened will need to be closed before the program will continue to the next plot. The plots are displayed every time the program is executed via the terminal using the command <i>python .\analysis.py</i>. <br>
 The function histplot() is used to draw the graph as histogram. [22] <i>iris</i> is the dataset used, while in the case of the code example the x-axis displays the values for SepalLenthCm. 
 The hue parameter determines which column of the dataset, in case of the project the categorical group species,  is used for colour coding (iris-setosa = blue, iris-versicolor = red, iris virginica = green). [21] <br>
 To avoid not to be able to see each histogram of the three variables the parameter element="step" was assigned. This draws a step function and therefore overlapping graphs are visible. This parameter is only relevant if univariant data is used like in this case. 
@@ -219,11 +217,11 @@ sns.set_theme(context='notebook', style='darkgrid', palette='deep', font='sans-s
 <img src = "PNG/Histogram_Iris-PetalLength.png" alt = "Iris Petal Length in cm">
 </p>
 
-**Summary of all variables for Sepal Length/Width & Petal Length/Width**
+**Summary of all variables for Sepal Length/Width & Petal Length/Width disregarding species**
 
 <div align="justify">
-<ins>Histograms in Matplotlib:</ins> Wikipedia describes Histograms as an accurate graphical representation of the distribution of numerical data. The histogram was first introduced by Karl Pearson. To construct a histogram, it is required to determine <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals, which are specified as consecutive, non-overlapping intervals of a variable. In this example multiple plots were added to one figure using the library pandas and numPy instead of seaborn. 
-The a.ravel() function returns a 1-dimensional array, containing the elements of the input. It helps the for statement to count through all columns. The index is used to be able to go through each column/variable, while iloc is used to select the data by row numbers (from 1 to 150 entries) and then moves on to the next column to plot the frequency of each value of this particular variable. 
+<ins>Histograms in Matplotlib:</ins> To construct a histogram, it is required to determine <i>bins</i> which is defined by the range of values divided by the entire range of values into a series of intervals, which are specified as consecutive, non-overlapping intervals of a variable. In this example multiple plots were added to one figure using the library pandas and numPy instead of seaborn. 
+The <i>a.ravel()</i> function returns a 1-dimensional array, containing the elements of the input. It helps the for statement to count through all columns. The index is used to be able to go through each column/variable, while <i>iloc</i> is used to select the data by row numbers (from 1 to 150 entries) and then moves on to the next column to plot the frequency of each value of this particular variable. 
 To visualise all subplots the tight layout automatically adjusts the subplots parameters so that the plots fit nicely into the display area.
 </div>
 
@@ -242,43 +240,51 @@ Output of Histograms of all varialbes not taking into acount species:
 <p align="center">
 <img src = "PNG/Histogram_AllVariables.png" alt = "All Variables counted">
 </p>
+<br>
 
-
-#### Scatterplots of pair of Variables 
+#### **Scatterplots of pair of Variables** 
 
 <div align="justify">
-A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting the samples in the dataset. The best way to display all relationships of the variables is by using a pairplot, see below for visulisation of the pairplot and code extract. The code extract is very similar to how scatterplots are programmed, the diag_kind="hist" changes the diagonal plot type to histogram which in this case fits the purpose of this project best.  
+A scatterplot is used to analyse relationships between variables. The dots in the graph are presenting the samples in the dataset. A variable sepal was creted to assign a legend and a title to the plot. The code used is easy to understand, the dataset <i>iris</i> was used while the x-achis and y-achis value was chosen manually and assigned. The hue parmeter is again used in the same way as for the histogram graph implementation. 
+</div>
+
+```python
+sepal = sns.scatterplot(data = iris, x="SepalLengthCm", y="SepalWidthCm", hue="Species")
+sepal.legend(loc=4) 
+sepal.set_title("Length versus Width of the Sepal leaf in cm") 
+```
+<div align="justify">
+ The best way to display all relationships of the variables is by using a pairplot, see below for visulisation of the pairplot and code extract. The code extract is very similar to how scatterplots are programmed, the diag_kind="hist" changes the diagonal plot type to histogram which in this case fits the purpose of this project best.  
 </div>
 
 <p align="center">
 <img src="PNG/Pairplot_CombinationsSepalPetal.png" alt="Pairplot of Sepal vs Petal Width/Length in Cm">
 </p>
 
+Code extract of the pairplot implementation
 ```python
 sns.pairplot(data= new_iris, hue="Species", diag_kind="hist") 
 ```
 
-## Data Analysis
+## Data Analysis Fisher's Iris Data set using plots
 
-### Analysis of the Fisher's Iris Data set using plots
+This section gives a brief introduction on how the visualised data is understood and how certain shapes and distributions are interpreted using researched references. It is only a brief description and certainly not fully exhausted.
 
-
-#### Analysis of the Histograms
+### **Analysis of the Histograms**
 
 <div align ="justify">
-Histograms are used to have a more detailed view of a variable and show the distribution of that variable. [13] The distribution shows the spread of the data, which can be either widely stretched or compressed. The shape of the distribution gives indications about the data displayed. There are different shapes which are defined by the number of peaks and by the possession of symmetry. 
-For all Histogram it can be noted that all three Species overlap throughout. 
-
-<br>
-
+Histograms are used to have a more detailed view of a variable and show the distribution of that variable. [13] The distribution shows the spread of the data, which can be either widely stretched or compressed. The shape of the distribution gives indications about the data displayed. A kernel density estimation was added to the graphs to show which shape the distribution follows. These different shapes are defined by the number of peaks and by the possession of symmetry. <br>
+For all Histogram it can be noted that all three Species overlap throughout, only for Petal Length and Width a clear separation is visible which means that these variables can be used to distinguish the iris species using the morphologic measures of the Iris dataset. This is also clearly showing in the Histogram of all variables disregarding the species. For petal length and width you can see a separate distribution on the left which as we know from the other histograms is the species Iris setosa. </div>
+<div align ="justify">
 The histogram of all variables shows each variable and its frequency not taking into consideration the different species. It is easy to notice that Sepal Length, Petal Length and Petal Width follow a unimodal distribution while Sepal Width reflects the Gaussian curve or normal distribution (bell shaped). 
 </div>
+<br>
 
-#### Analysis of the Scatterplots
+### **Analysis of the Scatterplots**
 <div align="justify">
 From histograms that focus on one single column/one variable of the data set, the scatterplot moves to the visualising of multiple columns and therefore multiple variables. [12] The 
 Scatterplots is used to show if the variables are in a linear relationship. Linearity is important to predict data. Therefore, it is always desired to achieve linearisation even if the relationship between variable is initially non-linear, it is desired to transform it towards linearity. [10]
-</div>
+</div><br>
 
 <img src = "PNG/Scatterplot_Iris-Sepal.png" alt = "Scatterplot_Iris-Sepal" width = 400 height=400><img src = "PNG/Scatterplot_Iris-Petal.png" alt = "Scatterplot_Iris-Petal" width = 400 height=400>
 
@@ -291,14 +297,19 @@ As above-mentioned correlation is used as a statistical measure to express the l
 In this case for petal length grows the petal width grows too and this is visible for all three species. Therefore, we can see a relationship between the variable petal length and petal width. In the case of sepal length vs spepal width this relationship is only visible for Iris setosa however not for Iris versicolor and Iris virginica. 
 Although the representation of points that group clouds for each Species (blue, orange and green dots) strongly suggest a possible separability of the groups. [14] <br>
 <br>
-Noticeable is that the left graph seems to show less data entries for Iris setosa compared to the right graph. Knowing that there are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. [11]
-</div>
+Noticeable is that the left graph seems to show less data entries for Iris setosa compared to the right graph. Knowing that there are 50 entries for each variable per Species the scatterplot only shows around 20 data entries on the plot. This is as some values are the exact same and therefore would be plotted at the same position. This can be prevented using jitter, not implemented as part of this project. [11]
+</div><br>
 
-## Conclusion
+## **Conclusion**
 
 <div align="justify">
-Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed clearly throughout the visualisation section of this report that the species Iris setosa is easily distinguishable from the other two species. However Iris virginica and Iris versicolor are almost not seperable without the species information given in the dataset. However, in this project only some statistical calculations were performed and the basic Histogram and Scatterplots visualised. As per Fisher's work the three species would be separable using further data analysis tools and is nowadays used as a perfect example in many test cases for statistical classification techniques in machine learning. [24] 
-</div>
+Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed clearly throughout the visualisation section of this report that the species Iris setosa is easily distinguishable from the other two species. However Iris virginica and Iris versicolor are almost not seperable without the species information given in the dataset. However, in this project only some statistical calculations were performed and the basic Histogram and Scatterplots visualised. As per Fisher's work the three species would be separable using further data analysis tools and is nowadays used as a perfect example in many test cases for statistical classification techniques in machine learning. [24] </div><br>
+
+
+### **Feedback and future improvements**
+<div align="justify">
+As part of this project improvements could be made in the structure of the code using functions and instead of creating each plot separately combine this into one function. Also the GitHub commits could have been more structured, however only at the end of the project it was noticed that a preview of the readme files is available on Visual Studio Code. 
+Due to bad time keeping and procrastinating many ideas could not be implemented, even though the course was well organised and structured and gave a good understanding of what is expected. </div><br>
 
 ## References
 
@@ -375,7 +386,7 @@ Reviewing the Iris Fisher's Dataset using Python as Data Anaysis tool showed cle
 ### Other repositiories
 [GitHub repository](https://github.com/sandraelekes/pands-project-2020/blob/master/README.md)
 
-</details>
+</details><br>
 
 ## Entries and Updates 
 
